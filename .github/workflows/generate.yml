@@ -2,15 +2,133 @@ name: 'Generate Assets'
 on:
   schedule:
     - cron: '30 0,12 * * *' # Runs at 00:30 and 12:30, every day
-  
+
   workflow_dispatch:
+    inputs:
+      VERSION:
+        description: 'Generate assets for a specific version. Leave blank for latest version.'
+        type: string
+        required: false
 
 permissions:
   contents: write
   actions: read
   checks: write
 
+env:
+  MANIFEST_URL: 'https://piston-meta.mojang.com/mc/game/version_manifest_v2.json'
+
 jobs:
   check-version:
     name: 'Check version'
     runs-on: ubuntu-latest
+    steps:
+      - name: 'Fetch latest Minecraft version'
+        id: 'fetch-latest-version'
+        if: github.event.inputs.VERSION == ''
+        run: |
+          LATEST_VERSION=$(curl -L $MANIFEST_URL | jq -r '.latest.snapshot')
+          echo "Found latest snapshot: \"$LATEST_VERSION\""
+          echo "LATEST_VERSION=$LATEST_VERSION" >> "$GITHUB_OUTPUT"
+
+      - name: 'Checkout repository'
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 'Check for existing version tag'
+        id: 'check-for-existing-tag'
+        env:
+          VERSION: ${{ steps.fetch-latest-version.outputs.LATEST_VERSION || inputs.VERSION }}
+        run: |
+          if git show-ref --tags --verify --quiet "refs/tags/$VERSION"; then
+            echo "Tag \"$VERSION\" already exists. Skipping next jobs."
+            echo "TAG_EXISTS=TRUE" >> "$GITHUB_OUTPUT"
+          else
+            echo "Tag \"$VERSION\" does not exist. Running next jobs."
+            echo "TAG_EXISTS=FALSE" >> "$GITHUB_OUTPUT"
+          fi
+
+    outputs:
+      TAG_EXISTS: ${{ steps.check-for-existing-tag.outputs.TAG_EXISTS }}
+      VERSION: ${{ steps.fetch-latest-version.outputs.LATEST_VERSION || inputs.VERSION }}
+
+  generate-new-assets:
+    name: 'Generate new assets'
+    runs-on: ubuntu-latest
+    needs: [check-version]
+    if: needs.check-version.outputs.TAG_EXISTS == 'FALSE'
+    env:
+      VERSION: ${{ needs.check-version.outputs.VERSION }}
+      DOWNLOAD_DIR: './download'
+
+    steps:
+      - name: 'Download client.jar'
+        run: |
+          mkdir $DOWNLOAD_DIR
+          
+          echo "Fetch package URL for version \"$VERSION\""
+          PACKAGE_URL=$(curl -L $MANIFEST_URL | jq -r ".versions[] | select(.id == \"$VERSION\") | .url")
+          
+          echo "Fetch client.jar URL from \"$PACKAGE_URL\""
+          JAR_URL=$(curl -L $PACKAGE_URL | jq -r ".downloads.client.url")
+          
+          echo "Downloading client.jar from \"$JAR_URL\""
+          curl -L -o ./download/client.jar $JAR_URL
+
+          echo "Saved client.jar to \"$DOWNLOAD_DIR\""
+
+      - name: 'Extract assets from client.jar'
+        run: |
+          mkdir -p ./default
+          unzip $DOWNLOAD_DIR/client.jar "pack.png" -d "./default"
+          unzip $DOWNLOAD_DIR/client.jar "assets/*" -d "./default"
+
+      - name: 'Upload assets'
+        uses: actions/upload-artifact@v4
+        with:
+          name: 'default'
+          path: './default'
+
+    outputs:
+      VERSION: ${{ needs.check-version.outputs.VERSION }}
+
+  commit-and-tag-new-assets:
+    name: 'Commit and tag new assets'
+    runs-on: ubuntu-latest
+    needs: [generate-new-assets]
+    env: 
+      VERSION: ${{ needs.generate-new-assets.outputs.VERSION }}
+
+    steps:
+      - name: ''
+        run: |
+          echo "Version \"$VERSION\""
+
+      - name: 'Checkout repository'
+        uses: actions/checkout@v4
+        with:
+          ref: 'generated'
+
+      - name: 'Remove old assets'
+        run: |
+          git rm -rf --ignore-unmatch "./"
+
+      - name: 'Add new assets'
+        uses: actions/download-artifact@v4
+        with:
+          name: 'default'
+          path: './'
+          
+      - name: 'Commit and push assets'
+        run: |
+          echo "Commit Message: \"New assets for version $VERSION\""
+          echo "Tag: \"$VERSION\""
+          echo "Tag Message: \"Version $VERSION\""
+          
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git add "./"
+          git commit -a -m "New assets for version $VERSION" || exit 0
+          git tag -a "$VERSION" -m "Version $VERSION"
+          git push origin generated --tags
