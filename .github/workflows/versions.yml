@@ -1,0 +1,24 @@
+name: 'Multiple Versions'
+on:
+  workflow_dispatch:
+    inputs:
+      VERSIONS:
+        description: 'Generate assets for a multiple version as a JSON array.'
+        type: string
+        required: true
+
+permissions:
+  contents: write
+  actions: read
+
+jobs:
+  run-generate:
+    name: 'Run generate.yml'
+    strategy:
+      matrix:
+        VERSION: ${{ fromJSON(inputs.VERSIONS) }}
+      max-parallel: 1
+    
+    uses: ./.github/workflows/generate.yml
+    with:
+      VERSION: ${{ matrix.VERSION }}

@@ -1,0 +1,119 @@
+name: 'Generate Assets'
+on:
+  # schedule:
+  #   - cron: '30 0,12 * * *' # Runs at 00:30 and 12:30, every day
+
+  workflow_call:
+    inputs:
+      VERSION:
+        description: 'Generate assets for a specific version. Used by "versions.yml" workflow to generate assets for multiple versions.'
+        type: string
+        required: true
+
+  workflow_dispatch:
+    inputs:
+      VERSION:
+        description: 'Generate assets for a specific version. Leave blank for latest version.'
+        type: string
+        required: false
+
+permissions:
+  contents: write
+  actions: read
+
+env:
+  MANIFEST_URL: 'https://piston-meta.mojang.com/mc/game/version_manifest_v2.json'
+
+jobs:
+  check-version:
+    name: 'Check version'
+    runs-on: ubuntu-24.04
+    steps:
+      - name: 'Fetch latest Minecraft version'
+        id: 'fetch-latest-version'
+        if: inputs.VERSION == ''
+        run: |
+          LATEST_VERSION=$(curl -L $MANIFEST_URL | jq -r '.latest.snapshot')
+          echo "Found latest snapshot: \"$LATEST_VERSION\""
+          echo "LATEST_VERSION=$LATEST_VERSION" >> "$GITHUB_OUTPUT"
+
+      - name: 'Checkout repository'
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 'Check for existing version tag'
+        id: 'check-for-existing-tag'
+        env:
+          VERSION: ${{ steps.fetch-latest-version.outputs.LATEST_VERSION || inputs.VERSION }}
+        run: |
+          if git show-ref --tags --verify --quiet "refs/tags/$VERSION"; then
+            echo "Tag \"$VERSION\" already exists. Skipping next jobs."
+            echo "TAG_EXISTS=TRUE" >> "$GITHUB_OUTPUT"
+          else
+            echo "Tag \"$VERSION\" does not exist. Running next jobs."
+            echo "TAG_EXISTS=FALSE" >> "$GITHUB_OUTPUT"
+          fi
+
+    outputs:
+      TAG_EXISTS: ${{ steps.check-for-existing-tag.outputs.TAG_EXISTS }}
+      VERSION: ${{ steps.fetch-latest-version.outputs.LATEST_VERSION || inputs.VERSION }}
+
+  generate-new-assets:
+    name: 'Generate new assets'
+    runs-on: ubuntu-24.04
+    needs: [check-version]
+    if: needs.check-version.outputs.TAG_EXISTS == 'FALSE'
+    env:
+      VERSION: ${{ needs.check-version.outputs.VERSION }}
+    steps:
+      - name: 'Generate assets to "./default"'
+        id: download_assets
+        uses: MinecraftPlayground/generate-assets@v1.0.0
+        with:
+          version: ${{ env.VERSION }}
+
+      - name: 'Upload assets'
+        uses: actions/upload-artifact@v4
+        with:
+          name: 'default_${{ env.VERSION }}'
+          path: './default'
+
+    outputs:
+      VERSION: ${{ needs.check-version.outputs.VERSION }}
+
+  commit-and-tag-new-assets:
+    name: 'Commit and tag new assets'
+    runs-on: ubuntu-24.04
+    needs: [generate-new-assets]
+    env:
+      VERSION: ${{ needs.generate-new-assets.outputs.VERSION }}
+
+    steps:
+      - name: 'Checkout repository'
+        uses: actions/checkout@v4
+        with:
+          ref: 'generated'
+
+      - name: 'Remove old assets'
+        run: |
+          git rm -rf --ignore-unmatch "./"
+
+      - name: 'Add new assets'
+        uses: actions/download-artifact@v4
+        with:
+          name: 'default_${{ env.VERSION }}'
+          path: './'
+
+      - name: 'Commit and push assets'
+        run: |
+          echo "Commit Message: \"New assets for version $VERSION\""
+          echo "Tag: \"$VERSION\""
+          echo "Tag Message: \"Version $VERSION\""
+
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -a -m "New assets for version $VERSION" || exit 0
+          git tag -a "$VERSION" -m "Version $VERSION"
+          git push origin generated --tags
