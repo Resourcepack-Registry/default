@@ -1,0 +1,16 @@
+name: 'Generate Assets'
+on:
+  schedule:
+    - cron: '30 0,12 * * *' # Runs at 00:30 and 12:30, every day
+  
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: read
+  checks: write
+
+jobs:
+  check-version:
+    name: 'Check version'
+    runs-on: ubuntu-latest
