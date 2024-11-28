@@ -105,6 +105,16 @@ jobs:
           echo "moving pack.mcmeta to root"
           mv default/assets/pack.mcmeta default/.
 
+      - name: Extract default resourcepacks
+        if: ${{ hashFiles('default/assets/minecraft/resourcepacks/*.zip') != '' }}
+        run: |
+          for pack in default/assets/minecraft/resourcepacks/*.zip; do
+            echo "Extracting resourcepack from $pack"
+            mv $pack $pack.tmp
+            unzip $pack.tmp -d $pack
+            rm $pack.tmp
+          done
+
       - name: 'Upload assets'
         uses: actions/upload-artifact@v4
         with:
