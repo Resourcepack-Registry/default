@@ -60,29 +60,39 @@ jobs:
     if: needs.check-version.outputs.TAG_EXISTS == 'FALSE'
     env:
       VERSION: ${{ needs.check-version.outputs.VERSION }}
-      DOWNLOAD_DIR: './download'
 
     steps:
+      - name: Clone Go-Manifest
+        uses: actions/checkout@v4
+        with:
+          repository: MinecraftPlayground/go-manifest
+          path: go-manifest
+
+      - name: Setup Go
+        uses: actions/setup-go@v4
+        with:
+          go-version-file: go-manifest/go.mod
+
+      - name: Install tools
+        run: |
+          sudo apt-get install rename
+
       - name: 'Download client.jar'
         run: |
-          mkdir $DOWNLOAD_DIR
-          
-          echo "Fetch package URL for version \"$VERSION\""
-          PACKAGE_URL=$(curl -L $MANIFEST_URL | jq -r ".versions[] | select(.id == \"$VERSION\") | .url")
-          
-          echo "Fetch client.jar URL from \"$PACKAGE_URL\""
-          JAR_URL=$(curl -L $PACKAGE_URL | jq -r ".downloads.client.url")
-          
-          echo "Downloading client.jar from \"$JAR_URL\""
-          curl -L -o ./download/client.jar $JAR_URL
+          cd go-manifest
+          echo "Downloading client.jar for version \"$VERSION\""
+          go run examples/get_client/main.go $VERSION
 
-          echo "Saved client.jar to \"$DOWNLOAD_DIR\""
+          rename 's/.*/client.jar/s' client_*.jar
+
+          echo "Saved client.jar to \"go-manifest\""
 
       - name: 'Extract assets from client.jar'
         run: |
           mkdir -p ./default
-          unzip $DOWNLOAD_DIR/client.jar "pack.png" -d "./default"
-          unzip $DOWNLOAD_DIR/client.jar "assets/*" -d "./default"
+          unzip go-manifest/client.jar "pack.png" -d "./default"
+          unzip go-manifest/client.jar "assets/*" -d "./default"
+          rm -fr go-manifest/client.jar
 
       - name: 'Upload assets'
         uses: actions/upload-artifact@v4
@@ -97,7 +107,7 @@ jobs:
     name: 'Commit and tag new assets'
     runs-on: ubuntu-latest
     needs: [generate-new-assets]
-    env: 
+    env:
       VERSION: ${{ needs.generate-new-assets.outputs.VERSION }}
 
     steps:
@@ -119,13 +129,13 @@ jobs:
         with:
           name: 'default'
           path: './'
-          
+
       - name: 'Commit and push assets'
         run: |
           echo "Commit Message: \"New assets for version $VERSION\""
           echo "Tag: \"$VERSION\""
           echo "Tag Message: \"Version $VERSION\""
-          
+
           git config --local user.name "github-actions[bot]"
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git add -A
