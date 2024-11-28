@@ -94,6 +94,17 @@ jobs:
           unzip go-manifest/client.jar "assets/*" -d "./default"
           rm -fr go-manifest/client.jar
 
+      - name: Download further assets
+        run: |
+          echo "Downloading assets for version \"$VERSION\""
+          go run -C go-manifest examples/get_all_assets/main.go $VERSION
+
+          echo "Merging assets with thoose from client.jar"
+          rsync -vr go-manifest/assets default && rm -fr go-manifest/assets
+
+          echo "moving pack.mcmeta to root"
+          mv default/assets/pack.mcmeta default/.
+
       - name: 'Upload assets'
         uses: actions/upload-artifact@v4
         with:
