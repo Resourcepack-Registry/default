@@ -69,7 +69,7 @@ jobs:
     steps:
       - name: 'Generate assets to "./default"'
         id: download_assets
-        uses: MinecraftPlayground/generate-assets@v1.0.0
+        uses: MinecraftPlayground/generate-assets@v2.0.0
         with:
           version: ${{ env.VERSION }}
 
