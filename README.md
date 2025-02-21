@@ -10,7 +10,6 @@ https://github.com/Resourcepack-Registry/default/blob/<version>/<path to file>?r
 
 ## How it works
 ```mermaid
-
 flowchart TD
     START((Start))
     --> 
@@ -54,7 +53,6 @@ flowchart TD
     -->
     END((End))
 ```
-
 
 ## Disclaimer
 This repository assumes that because Mojang intentionally provides a public API for downloading the `client.jar`, they have no objection to the resulting generated assets existing anywhere on the internet for public consumption. If this assumption is ever contradicted, the repository will be removed immediately.
