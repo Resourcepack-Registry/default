@@ -10,6 +10,7 @@ https://github.com/Resourcepack-Registry/default/blob/<version>/<path to file>?r
 
 ## How it works
 ```mermaid
+
 flowchart TD
     START((Start))
     --> 
