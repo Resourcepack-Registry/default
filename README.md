@@ -24,7 +24,7 @@ flowchart TD
     -->
     TAG_EXISTS_NO-B[**Add** respective<br>version tag]
     -->
-    TAG_EXISTS_NO-C[Check if<br>**Snapshot == Relase**]
+    TAG_EXISTS_NO-C[Check if<br>**Snapshot == Release**]
     -->
     TAG_EXISTS_NO-SAME{Same}
     -->
