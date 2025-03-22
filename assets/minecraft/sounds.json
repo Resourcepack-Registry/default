@@ -2411,6 +2411,25 @@
     ],
     "subtitle": "subtitles.block.bubble_column.whirlpool_inside"
   },
+  "block.cactus_flower.break": {
+    "sounds": [
+      "block/cactus_flower/break1",
+      "block/cactus_flower/break2",
+      "block/cactus_flower/break3",
+      "block/cactus_flower/break4",
+      "block/cactus_flower/break5"
+    ],
+    "subtitle": "subtitles.block.generic.break"
+  },
+  "block.cactus_flower.place": {
+    "sounds": [
+      "block/cactus_flower/place1",
+      "block/cactus_flower/place2",
+      "block/cactus_flower/place3",
+      "block/cactus_flower/place4"
+    ],
+    "subtitle": "subtitles.block.generic.place"
+  },
   "block.cake.add_candle": {
     "sounds": [
       "block/cake/add_candle1",
@@ -4160,6 +4179,59 @@
     ],
     "subtitle": "subtitles.block.generic.break"
   },
+  "block.deadbush.idle": {
+    "sounds": [
+      {
+        "name": "block/deadbush/sandblock_version/bushrustle1",
+        "volume": 4.0
+      },
+      {
+        "name": "block/deadbush/sandblock_version/bushrustle2",
+        "volume": 4.0
+      },
+      {
+        "name": "block/deadbush/sandblock_version/bushrustle3",
+        "volume": 4.0
+      },
+      {
+        "name": "block/deadbush/sandblock_version/creakysand1",
+        "volume": 4.0
+      },
+      {
+        "name": "block/deadbush/sandblock_version/crickets",
+        "volume": 4.0,
+        "weight": 3
+      },
+      {
+        "name": "block/deadbush/sandblock_version/howlingwind1",
+        "volume": 4.0
+      },
+      {
+        "name": "block/deadbush/sandblock_version/insect1",
+        "volume": 4.0
+      },
+      {
+        "name": "block/deadbush/sandblock_version/leaves",
+        "volume": 4.0
+      },
+      {
+        "name": "block/deadbush/sandblock_version/movingsand1",
+        "volume": 4.0,
+        "weight": 2
+      },
+      {
+        "name": "block/deadbush/sandblock_version/movingsand2",
+        "volume": 4.0,
+        "weight": 2
+      },
+      {
+        "name": "block/deadbush/sandblock_version/movingsand3",
+        "volume": 4.0,
+        "weight": 2
+      }
+    ],
+    "subtitle": "subtitles.block.deadbush.idle"
+  },
   "block.decorated_pot.break": {
     "sounds": [
       "block/decorated_pot/break1",
@@ -4756,6 +4828,59 @@
       "random/fizz"
     ],
     "subtitle": "subtitles.block.fire.extinguish"
+  },
+  "block.firefly_bush.idle": {
+    "sounds": [
+      {
+        "name": "block/firefly_bush/firefly_bush1",
+        "volume": 4.0
+      },
+      {
+        "name": "block/firefly_bush/firefly_bush2",
+        "volume": 4.0
+      },
+      {
+        "name": "block/firefly_bush/firefly_bush3",
+        "volume": 4.0
+      },
+      {
+        "name": "block/firefly_bush/firefly_bush4",
+        "volume": 4.0
+      },
+      {
+        "name": "block/firefly_bush/firefly_bush5",
+        "volume": 4.0
+      },
+      {
+        "name": "block/firefly_bush/firefly_bush6",
+        "volume": 4.0
+      },
+      {
+        "name": "block/firefly_bush/firefly_bush7",
+        "volume": 4.0,
+        "weight": 2
+      },
+      {
+        "name": "block/firefly_bush/firefly_bush8",
+        "volume": 4.0,
+        "weight": 2
+      },
+      {
+        "name": "block/firefly_bush/firefly_bush9",
+        "volume": 4.0,
+        "weight": 2
+      },
+      {
+        "name": "block/firefly_bush/firefly_bush10",
+        "volume": 4.0,
+        "weight": 2
+      },
+      {
+        "name": "block/firefly_bush/firefly_bush11",
+        "volume": 4.0
+      }
+    ],
+    "subtitle": "subtitles.block.firefly_bush.idle"
   },
   "block.flowering_azalea.break": {
     "sounds": [
@@ -9038,6 +9163,109 @@
     ],
     "subtitle": "subtitles.block.generic.hit"
   },
+  "block.sand.idle": {
+    "sounds": [
+      {
+        "name": "block/sand/sand1",
+        "volume": 4.0,
+        "weight": 2
+      },
+      {
+        "name": "block/sand/sand2",
+        "volume": 4.0,
+        "weight": 2
+      },
+      {
+        "name": "block/sand/sand3",
+        "volume": 4.0,
+        "weight": 2
+      },
+      {
+        "name": "block/sand/sand4",
+        "volume": 4.0
+      },
+      {
+        "name": "block/sand/sand5",
+        "volume": 4.0,
+        "weight": 2
+      },
+      {
+        "name": "block/sand/sand6",
+        "volume": 4.0,
+        "weight": 2
+      },
+      {
+        "name": "block/sand/sand7",
+        "volume": 4.0
+      },
+      {
+        "name": "block/sand/sand8",
+        "volume": 4.0
+      },
+      {
+        "name": "block/sand/sand9",
+        "volume": 4.0
+      },
+      {
+        "name": "block/sand/sand10",
+        "volume": 4.0
+      },
+      {
+        "name": "block/sand/sand10",
+        "volume": 4.0,
+        "weight": 2
+      },
+      {
+        "name": "block/sand/sand11",
+        "volume": 4.0
+      },
+      {
+        "name": "block/sand/sand12",
+        "volume": 4.0
+      },
+      {
+        "name": "block/sand/sand12",
+        "volume": 4.0
+      },
+      {
+        "name": "block/sand/sand13",
+        "volume": 4.0
+      },
+      {
+        "name": "block/sand/sand14",
+        "volume": 4.0
+      },
+      {
+        "name": "block/sand/sand15",
+        "volume": 4.0
+      },
+      {
+        "name": "block/sand/sand16",
+        "volume": 4.0
+      },
+      {
+        "name": "block/sand/sand17",
+        "volume": 4.0
+      },
+      {
+        "name": "block/sand/sand18",
+        "volume": 4.0
+      },
+      {
+        "name": "block/sand/sand19",
+        "volume": 4.0
+      },
+      {
+        "name": "block/sand/sand20",
+        "volume": 4.0
+      },
+      {
+        "name": "block/sand/sand21",
+        "volume": 4.0
+      }
+    ],
+    "subtitle": "subtitles.block.sand.idle"
+  },
   "block.sand.place": {
     "sounds": [
       "dig/sand1",
@@ -9056,6 +9284,23 @@
       "step/sand5"
     ],
     "subtitle": "subtitles.block.generic.footsteps"
+  },
+  "block.sand.wind": {
+    "sounds": [
+      "block/sand/wind1",
+      "block/sand/wind2",
+      "block/sand/wind3",
+      "block/sand/wind4",
+      "block/sand/wind5",
+      "block/sand/wind6",
+      "block/sand/wind7",
+      "block/sand/wind8",
+      "block/sand/wind9",
+      "block/sand/wind10",
+      "block/sand/wind11",
+      "block/sand/wind12"
+    ],
+    "subtitle": "subtitles.block.sand.wind"
   },
   "block.scaffolding.break": {
     "sounds": [
