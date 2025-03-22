@@ -1,7 +1,7 @@
 name: 'Generate Assets'
 on:
-  # schedule:
-  #   - cron: '30 0,12 * * *' # Runs at 00:30 and 12:30, every day
+  schedule:
+    - cron: '30 0,12 * * *' # Runs at 00:30 and 12:30, every day
 
   workflow_call:
     inputs:
