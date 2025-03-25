@@ -5214,7 +5214,7 @@
     "mount.onboard": "Kaomi iā %1$s i ka hemo ʻana",
     "multiplayer.applyingPack": "Hoʻouka i ia pūʻolo waiwai",
     "multiplayer.disconnect.authservers_down": "ʻAʻole hana ana ka poʻe kikowaena hōʻoia. Ō hoʻāʻo hou aku ma hope aku!",
-    "multiplayer.disconnect.bad_chat_index": "Received missed or reordered chat message from server",
+    "multiplayer.disconnect.bad_chat_index": "Detected missed or reordered chat message from server",
     "multiplayer.disconnect.banned": "Pāpā ʻia ʻoe mai kēia kikowaena",
     "multiplayer.disconnect.banned.expiration": "\nHoʻonoa ʻia kou kapu pāʻani i %s",
     "multiplayer.disconnect.banned.reason": "Pāpā ʻia ʻoe mai kēia kikowaena.\nKumu: %s",
