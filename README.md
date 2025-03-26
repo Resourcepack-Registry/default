@@ -1,5 +1,6 @@
 # Minecraft Default Assets
 [![Generate Assets](https://github.com/Resourcepack-Registry/default/actions/workflows/generate.yml/badge.svg?branch=main)](https://github.com/Resourcepack-Registry/default/actions/workflows/generate.yml)
+[![Latest Version](https://img.shields.io/github/v/tag/Resourcepack-Registry/default?style=flat&label=Latest%20Version&labelColor=%23353c43&color=%237e8790)](https://github.com/Resourcepack-Registry/default/tags)
 
 This repository keeps track of Minecrafts generated default assets for a resourcepack vor every version. Every 12 hours a check is made to see if there is a new Minecraft version. If a new version is available, it will be published on the `generated` branch with the respective tag of the version.
 
