@@ -1,0 +1,41 @@
+name: 'List all versions'
+
+env:
+  MANIFEST_URL: 'https://piston-meta.mojang.com/mc/game/version_manifest_v2.json'
+
+on:
+  workflow_dispatch:
+    inputs:
+      chunk_size:
+        description: 'Elements per subarray'
+        required: true
+        default: '100'
+
+jobs:
+  list-all-versions:
+    name: 'List all versions'
+    runs-on: ubuntu-24.04
+    steps:
+      - name: 'List all versions'
+        id: 'list-all-versions'
+        run: |
+          CHUNK_SIZE="${{ inputs.chunk_size }}"
+
+          VERSIONS=$(curl -sL "$MANIFEST_URL" | jq -c '[.versions[].id] | reverse')
+
+          echo "Versions:"
+          echo "$VERSIONS"
+
+          echo "Subarrays ($CHUNK_SIZE elements):"
+          echo "$VERSIONS" | jq -c --argjson size "$CHUNK_SIZE" '
+            range(0; length; $size) as $i |
+              .[$i:$i+$size]
+          ' | while read -r chunk; do
+              echo "$chunk"
+          done
+
+          echo "versions=$VERSIONS" >> "$GITHUB_OUTPUT"
+    
+    outputs:
+      versions: ${{ steps.list-all-versions.outputs.versions }}
+      chunk_size: ${{ inputs.chunk_size }}

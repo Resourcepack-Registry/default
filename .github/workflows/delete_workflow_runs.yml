@@ -1,0 +1,44 @@
+name: 'Delete workflow runs'
+
+on:
+  workflow_dispatch:
+    inputs:
+      workflow_file:
+        description: "Workflow file name"
+        required: true
+        type: string
+
+jobs:
+  delete-runs:
+    name: 'Delete workflow runs'
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Generate GitHub App token
+        id: app-token
+        uses: actions/create-github-app-token@v1
+        with:
+          app-id: ${{ secrets.APP_ID }}
+          private-key: ${{ secrets.APP_PRIVATE_KEY }}
+
+      - name: 'Checkout repository'
+        uses: actions/checkout@v4
+
+      - name: 'Delete'
+        env:
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
+          REPOSITORY: ${{ github.repository }}
+          WORKFLOW_FILE: ${{ inputs.workflow_file }}
+        run: |
+          echo "Delete runs for workflow \"$WORKFLOW_FILE\""
+          
+          run_ids=$(gh run list --status "completed" --limit 1000 --workflow "$WORKFLOW_FILE" --json databaseId -q '.[].databaseId')
+
+          if [ -z "$run_ids" ]; then
+            echo "No runs for \"$WORKFLOW_FILE\""
+            exit 0
+          fi
+
+          for run_id in $run_ids; do
+            echo "Deleting run $run_id ..."
+            gh api repos/$REPOSITORY/actions/runs/$run_id -X DELETE
+          done

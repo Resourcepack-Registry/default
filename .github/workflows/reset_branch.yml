@@ -1,0 +1,57 @@
+name: 'Reset Branch'
+
+on:
+  workflow_call:
+    inputs:
+      branch:
+        type: string
+        description: 'Branch to reset'
+        required: true
+
+  workflow_dispatch:
+    inputs:
+      branch:
+        type: choice
+        description: 'Branch to reset'
+        options:
+          - 'generated'
+          - 'badge'
+        required: true
+
+jobs:
+  reset:
+    name: 'Reset (${{ inputs.branch }})'
+    runs-on: ubuntu-24.04
+    if: ${{ inputs.branch }} != 'main'
+    steps:
+      - name: 'Generate GitHub App token'
+        id: 'app-token'
+        uses: actions/create-github-app-token@v1
+        with:
+          app-id: ${{ secrets.APP_ID }}
+          private-key: ${{ secrets.APP_PRIVATE_KEY }}
+
+      - name: 'Configure GIT'
+        run: |
+          git config --global user.name '${{ steps.app-token.outputs.app-slug }}[bot]'
+          git config --global user.email '${{ secrets.APP_USER_ID }}+${{ steps.app-token.outputs.app-slug }}[bot]@users.noreply.github.com'
+
+      - name: 'Checkout repository'
+        uses: actions/checkout@v4
+        with:
+          token: ${{ steps.app-token.outputs.token }}
+          fetch-depth: 0
+
+      - name: 'Reset Branch'
+        env:
+          BRANCH: ${{ inputs.branch }}
+        run: |
+          echo "Reset branch: ${BRANCH}"
+
+          git branch -D $BRANCH 2>/dev/null || true
+          git checkout --orphan $BRANCH
+
+          git rm -rf . || true
+          
+          git commit --allow-empty -m "Reset branch"
+          git push --force origin $BRANCH

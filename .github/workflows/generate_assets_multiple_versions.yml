@@ -1,0 +1,66 @@
+name: 'Generate assets for multiple versions'
+
+on:
+  workflow_dispatch:
+    inputs:
+      versions:
+        description: 'Versions as a JSON array.'
+        type: string
+        required: true
+
+jobs:
+  generate-assets:
+    name: 'Run generate_assets.yml'
+    runs-on: ubuntu-24.04
+    steps:
+      - name: 'Generate GitHub App token'
+        id: app-token
+        uses: actions/create-github-app-token@v1
+        with:
+          app-id: ${{ secrets.APP_ID }}
+          private-key: ${{ secrets.APP_PRIVATE_KEY }}
+
+      - name: 'Checkout repository'
+        uses: actions/checkout@v4
+
+      - name: 'Run assets generation loop'
+        env:
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
+          APP_ID: ${{ secrets.APP_ID }}
+          APP_INSTALLATION_ID: ${{ secrets.APP_INSTALLATION_ID }}
+          APP_PRIVATE_KEY: ${{ secrets.APP_PRIVATE_KEY }}
+          REPOSITORY: ${{ github.repository }}
+
+        run: |
+          versions='${{ inputs.versions }}'
+
+          gh extension install Link-/gh-token
+          
+          for version in $(echo "$versions" | jq -r '.[]'); do
+            echo "Version: \"$version\""
+            
+            echo "Generating installation token"
+            echo "$APP_PRIVATE_KEY" > private-key.pem
+            GH_TOKEN=$(\
+              gh token generate \
+                --app-id "$APP_ID" \
+                --installation-id "$APP_INSTALLATION_ID" \
+                --key "private-key.pem" \
+                --token-only \
+            )
+            rm private-key.pem
+            export GH_TOKEN="$GH_TOKEN"
+            
+            echo "Triggering workflow"
+            gh workflow run generate_assets.yml \
+              --repo $REPOSITORY \
+              -f version="$version"
+            
+            sleep 5
+            run_id=$(gh run list --workflow="generate_assets.yml" --json databaseId --jq '.[0].databaseId')
+            echo "Waiting for run $run_id to complete..."
+            
+            gh run watch "$run_id" --compact --exit-status > /dev/null 2>&1
+
+            echo "Run $run_id done!"
+          done
