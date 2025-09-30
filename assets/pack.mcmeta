@@ -15,9 +15,14 @@
             "name": "Shqip",
             "bidirectional": false
         },
-        "de_alg": {
+        "swg": {
             "region": "Allgai",
             "name": "Oschtallgaierisch",
+            "bidirectional": false
+        },
+        "enp": {
+            "region": "Worldwide",
+            "name": "Anglish",
             "bidirectional": false
         },
         "ar_sa": {
@@ -53,6 +58,11 @@
         "bs_ba": {
             "region": "Bosna i Hercegovina",
             "name": "Bosanski",
+            "bidirectional": false
+        },
+        "brb": {
+            "region": "Nederland",
+            "name": "Braobans",
             "bidirectional": false
         },
         "br_fr": {
@@ -108,6 +118,11 @@
         "nl_be": {
             "region": "Belgi\u00eb",
             "name": "Vlaams",
+            "bidirectional": false
+        },
+        "ovd": {
+            "region": "Swerre",
+            "name": "\u00d6vdalsk",
             "bidirectional": false
         },
         "en_ud": {
@@ -405,7 +420,7 @@
             "name": "Quenya",
             "bidirectional": false
         },
-        "ksh_de": {
+        "ksh": {
             "region": "Rhingland",
             "name": "K\u00f6lsch/Ripoarisch",
             "bidirectional": false
@@ -430,9 +445,14 @@
             "name": "\u0421\u0440\u043f\u0441\u043a\u0438",
             "bidirectional": false
         },
-        "en_ws": {
+        "enws": {
             "region": "Kingdom of England",
             "name": "Shakespearean English",
+            "bidirectional": false
+        },
+        "szl": {
+            "region": "G\u014drny \u015al\u014dnsk",
+            "name": "\u015al\u014dnsk\u014f g\u014fdka",
             "bidirectional": false
         },
         "sk_sk": {
@@ -510,6 +530,11 @@
             "name": "\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430",
             "bidirectional": false
         },
+        "sxu": {
+            "region": "Saggsn",
+            "name": "S\u00e4ggs'sch",
+            "bidirectional": false
+        },
         "val_es": {
             "region": "Pa\u00eds Valenci\u00e0",
             "name": "Catal\u00e0 (Valenci\u00e0)",
@@ -537,7 +562,7 @@
         }
     },
     "pack": {
-        "description": "The default look of Minecraft",
-        "pack_format": 3
+        "description": "The default look and feel of Minecraft",
+        "pack_format": 4
     }
 }
