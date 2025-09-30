@@ -15,6 +15,11 @@
             "name": "Shqip",
             "bidirectional": false
         },
+        "de_alg": {
+            "region": "Allgai",
+            "name": "Oschtallgaierisch",
+            "bidirectional": false
+        },
         "ar_sa": {
             "region": "\u0627\u0644\u0639\u0627\u0644\u0645 \u0627\u0644\u0639\u0631\u0628\u064a",
             "name": "\u0627\u0644\u0639\u0631\u0628\u064a\u0629",
@@ -43,6 +48,11 @@
         "be_by": {
             "region": "\u0411\u0435\u043b\u0430\u0440\u0443\u0441\u044c",
             "name": "\u0411\u0435\u043b\u0430\u0440\u0443\u0441\u043a\u0430\u044f",
+            "bidirectional": false
+        },
+        "bs_ba": {
+            "region": "Bosna i Hercegovina",
+            "name": "Bosanski",
             "bidirectional": false
         },
         "br_fr": {
@@ -93,6 +103,11 @@
         "nl_nl": {
             "region": "Nederland",
             "name": "Nederlands",
+            "bidirectional": false
+        },
+        "nl_be": {
+            "region": "Belgi\u00eb",
+            "name": "Vlaams",
             "bidirectional": false
         },
         "en_ud": {
@@ -152,7 +167,7 @@
         },
         "fr_ca": {
             "region": "Canada",
-            "name": "Fran\u00e7ais qu\u00e9b\u00e9cois",
+            "name": "Fran\u00e7ais",
             "bidirectional": false
         },
         "fy_nl": {
@@ -178,6 +193,11 @@
         "de_at": {
             "region": "\u00d6sterreich",
             "name": "Deitsch",
+            "bidirectional": false
+        },
+        "de_ch": {
+            "region": "Schwiz",
+            "name": "Schwizerd\u00fctsch",
             "bidirectional": false
         },
         "el_gr": {
@@ -210,9 +230,14 @@
             "name": "\u00cdslenska",
             "bidirectional": false
         },
-        "io_ido": {
+        "io_en": {
             "region": "Idia",
             "name": "Ido",
+            "bidirectional": false
+        },
+        "ig_ng": {
+            "region": "Naigeria",
+            "name": "Igbo",
             "bidirectional": false
         },
         "id_id": {
@@ -235,13 +260,23 @@
             "name": "\u65e5\u672c\u8a9e",
             "bidirectional": false
         },
+        "kab_kab": {
+            "region": "Dzayer",
+            "name": "Taqbaylit",
+            "bidirectional": false
+        },
+        "kn_in": {
+            "region": "\u0cad\u0cbe\u0cb0\u0ca4",
+            "name": "\u0c95\u0ca8\u0ccd\u0ca8\u0ca1",
+            "bidirectional": false
+        },
         "tlh_aa": {
-            "region": "Qo\u2019noS",
+            "region": "tlhIngan wo'",
             "name": "tlhIngan Hol",
             "bidirectional": false
         },
         "ko_kr": {
-            "region": "\ud55c\uad6d",
+            "region": "\ub300\ud55c\ubbfc\uad6d",
             "name": "\ud55c\uad6d\uc5b4",
             "bidirectional": false
         },
@@ -271,7 +306,7 @@
             "bidirectional": false
         },
         "jbo_en": {
-            "region": "lojbo",
+            "region": "la jbogu'e",
             "name": "la .lojban.",
             "bidirectional": false
         },
@@ -322,7 +357,7 @@
         },
         "no_no": {
             "region": "Norge",
-            "name": "Norsk",
+            "name": "Norsk bokm\u00e5l",
             "bidirectional": false
         },
         "nn_no": {
@@ -333,6 +368,11 @@
         "oc_fr": {
             "region": "Occit\u00e0nia",
             "name": "Occitan",
+            "bidirectional": false
+        },
+        "oj_ca": {
+            "region": "Anishinaabewaki",
+            "name": "Ojibwemowin",
             "bidirectional": false
         },
         "fa_ir": {
@@ -390,6 +430,11 @@
             "name": "\u0421\u0440\u043f\u0441\u043a\u0438",
             "bidirectional": false
         },
+        "en_ws": {
+            "region": "Kingdom of England",
+            "name": "Shakespearean English",
+            "bidirectional": false
+        },
         "sk_sk": {
             "region": "Slovensko",
             "name": "Sloven\u010dina",
@@ -415,6 +460,11 @@
             "name": "Espa\u00f1ol",
             "bidirectional": false
         },
+        "es_cl": {
+            "region": "Chile",
+            "name": "Espa\u00f1ol",
+            "bidirectional": false
+        },
         "es_mx": {
             "region": "M\u00e9xico",
             "name": "Espa\u00f1ol",
@@ -430,11 +480,6 @@
             "name": "Espa\u00f1ol",
             "bidirectional": false
         },
-        "swg_de": {
-            "region": "Allgai",
-            "name": "Oschdallgaierisch",
-            "bidirectional": false
-        },
         "sv_se": {
             "region": "Sverige",
             "name": "Svenska",
@@ -443,6 +488,11 @@
         "tzl_tzl": {
             "region": "Talossa",
             "name": "Talossan",
+            "bidirectional": false
+        },
+        "ta_in": {
+            "region": "\u0b87\u0ba8\u0bcd\u0ba4\u0bbf\u0baf\u0bbe",
+            "name": "\u0ba4\u0bae\u0bbf\u0bb4\u0bcd",
             "bidirectional": false
         },
         "th_th": {
@@ -465,6 +515,11 @@
             "name": "Catal\u00e0 (Valenci\u00e0)",
             "bidirectional": false
         },
+        "vec_it": {
+            "region": "Veneto",
+            "name": "V\u00e8neto",
+            "bidirectional": false
+        },
         "vi_vn": {
             "region": "Vi\u1ec7t Nam",
             "name": "Ti\u1ebfng Vi\u1ec7t",
@@ -473,6 +528,11 @@
         "cy_gb": {
             "region": "Cymru",
             "name": "Cymraeg",
+            "bidirectional": false
+        },
+        "yo_ng": {
+            "region": "N\u00e0\u00ecj\u00edr\u00ed\u00e0",
+            "name": "Yor\u00f9b\u00e1",
             "bidirectional": false
         }
     },
