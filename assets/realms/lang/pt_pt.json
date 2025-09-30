@@ -1,5 +1,6 @@
 {
     "mco.account.privacy.info": "Saiba mais sobre a Mojang e leis de privacidade",
+    "mco.account.privacyinfo": "A Mojang implementa certos procedimentos para ajudar a proteger as crian\u00e7as e a sua privacidade, tais como o cumprimento da Children\u2019s Online Privacy Protection Act (COPPA) e do Regulamento Geral sobre Prote\u00e7\u00e3o de Dados (GDPR).\n\nPoder\u00e1s ter de receber autoriza\u00e7\u00e3o dos teus pais antes de acederes \u00e0 tua conta do Realms.\n\nSe tiveres uma conta do Minecraft antiga (em que o login \u00e9 efetuado com o nome de utilizador), ter\u00e1s de migrar a tua conta para uma da Mojang de forma a poderes aceder ao Realms.",
     "mco.account.update": "Atualizar Conta",
     "mco.activity.noactivity": "Sem atividade nos \u00faltimos %s dias",
     "mco.activity.title": "Atividade dos Jogadores",
@@ -79,7 +80,7 @@
     "mco.configure.world.resourcepack.question.line2": "Queres descarreg\u00e1-lo e jogar?",
     "mco.configure.world.restore.download.question.line1": "O mundo ser\u00e1 transferido e adicionado aos seus mundos do modo Um Jogador.",
     "mco.configure.world.restore.download.question.line2": "Queres continuar?",
-    "mco.configure.world.restore.question.line1": "O teu Realm ser\u00e1 restaurado para a data '%s' (%s)",
+    "mco.configure.world.restore.question.line1": "O teu Realm ser\u00e1 restaurado para a data \"%s\" (%s)",
     "mco.configure.world.restore.question.line2": "Tens a certeza de que queres continuar?",
     "mco.configure.world.settings.title": "Defini\u00e7\u00f5es",
     "mco.configure.world.slot": "Mundo %s",
@@ -225,8 +226,8 @@
     "mco.upload.select.world.none": "N\u00e3o foram encontrados mundos de um jogador!",
     "mco.upload.select.world.subtitle": "Seleciona um mundo de um jogador para carregar",
     "mco.upload.select.world.title": "Carregar o mundo",
-    "mco.upload.size.failure.line1": "%s \u00e9 muito grande!",
+    "mco.upload.size.failure.line1": "\"%s\" \u00e9 demasiado grande!",
     "mco.upload.size.failure.line2": "\u00c9 %s. O tamanho m\u00e1ximo permitido \u00e9 de %s.",
-    "mco.upload.uploading": "A carregar '%s'",
+    "mco.upload.uploading": "A carregar \"%s\"",
     "mco.upload.verifying": "A verificar o mundo"
 }

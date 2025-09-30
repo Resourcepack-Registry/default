@@ -1,5 +1,6 @@
 {
     "mco.account.privacy.info": "Lue lis\u00e4\u00e4 Mojangista ja yksityisyydensuojalaeista",
+    "mco.account.privacyinfo": "Mojang on luonut uusia tapoja suojelemaan lapsia ja heid\u00e4n yksityisyytt\u00e4, joka toimii Lasten Internettiyksityisyyden asetuksiin (COPPA) ja Yleiseen Datasuojan S\u00e4\u00e4d\u00f6ksiin (GDPR).\n\nSinun pit\u00e4\u00e4 hankkia vanhempien vahvistus, ennen kuin p\u00e4\u00e4set Realmsiin.\n\nJos sinulla on vanhempi Minecraft-tili (kirjaudut sis\u00e4\u00e4n k\u00e4ytt\u00e4j\u00e4nimell\u00e4, etk\u00e4 s\u00e4hk\u00f6postilla), sinun tulee yhdist\u00e4\u00e4 tilisi Mojang-tiliin ett\u00e4 p\u00e4\u00e4set Realmsiin.",
     "mco.account.update": "P\u00e4ivit\u00e4 tili",
     "mco.activity.noactivity": "Ei toimintaa %s p\u00e4iv\u00e4\u00e4n",
     "mco.activity.title": "Pelaajatoiminta",

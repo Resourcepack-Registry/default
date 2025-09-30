@@ -1,5 +1,6 @@
 {
     "mco.account.privacy.info": "Magbasa pa tungkol sa Mojang at batas ukol sa privacy",
+    "mco.account.privacyinfo": "Ipinapatupad ng Mojang ang mga patakaran upang makatulong na maprotektahan ang kabataan at ang kanilang privacy kabilang ang pagsunod sa Children\u2019s Online Privacy Protection Act (COPPA) at General Data Protection Regulation (GDPR).\n\nBaka kailangan mong humingi ng pahintulot sa iyong magulang bago mabuksan ang iyong account sa Realms.\n\nKung mayroon kang lumang Minecraft account (naglo-log in ka gamit ang iyong pangalan), kailangan mong ilipat ang account sa Mojang account upang mabuksan ang Realms.",
     "mco.account.update": "I-update ang Account",
     "mco.activity.noactivity": "Walang aktibidad para sa mga nakalipas na %s araw",
     "mco.activity.title": "Aktibidad ng manlalaro",

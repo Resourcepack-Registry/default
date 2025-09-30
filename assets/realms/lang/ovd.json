@@ -1,5 +1,6 @@
 {
     "mco.account.privacy.info": "L\u00e4s mer om Mojang och integritetslagar",
+    "mco.account.privacyinfo": "Mojang genomf\u00f6r vissa procedurer f\u00f6r att hj\u00e4lpa till att skydda barn och deras integritet inklusive att f\u00f6lja Children\u2019s Online Privacy Protection Act (COPPA) och allm\u00e4nna dataskyddsf\u00f6rordningen (DSF / GDPR).\n\nDu kanske beh\u00f6ver f\u00e5 till\u00e5telse fr\u00e5n en f\u00f6r\u00e4lder innan du kan komma \u00e5t ditt Realms-konto.\n\nOm du har ett \u00e4ldre Minecraft-konto (du loggar in med ditt anv\u00e4ndarnamn) m\u00e5ste du migrera kontot till ett Mojang-konto f\u00f6r att komma \u00e5t Realms.",
     "mco.account.update": "Uppdatera konto",
     "mco.activity.noactivity": "Ingen aktivitet de senaste %s dagarna",
     "mco.activity.title": "Spelaraktivitet",

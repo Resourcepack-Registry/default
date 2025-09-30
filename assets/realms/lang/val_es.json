@@ -1,5 +1,6 @@
 {
     "mco.account.privacy.info": "Llig m\u00e9s sobre Mojang i les lleis de privacitat",
+    "mco.account.privacyinfo": "Mojang implementa certs procediments per ajudar a protegir als menors i la seua privacitat incloent complir amb la Llei de Protecci\u00f3 de Privacitat Infantil a Internet (COPPA) i el Reglament General de Protecci\u00f3 de Dades (RGPD).\n\nHas de tenir consentiment parental abans de poder tenir acc\u00e9s al teu compte de Realms.\n\nSi tens un compte de Minecraft antic (inicies sessi\u00f3 amb el teu nom d'usuari), haur\u00e0s de migrar el teu compte a un de Mojang per poder accedir a Realms.",
     "mco.account.update": "Actualitza el compte",
     "mco.activity.noactivity": "No hi ha hagut cap activitat des de fa %s dies",
     "mco.activity.title": "Activitat del jugador",

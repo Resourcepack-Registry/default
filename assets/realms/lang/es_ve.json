@@ -1,5 +1,6 @@
 {
     "mco.account.privacy.info": "Leer m\u00e1s sobre Mojang y leyes de privacidad",
+    "mco.account.privacyinfo": "Mojang implementa ciertos procedimientos para ayudar a proteger a ni\u00f1os y ni\u00f1as, incluyendo su privacidad, en cumplimiento con la Ley de Protecci\u00f3n de Privacidad Infantil en Internet (COPPA) y el Reglamento General de Protecci\u00f3n de Datos (RGPD).\n\nNecesitas autorizaci\u00f3n parental para acceder a tu cuenta de Realms.\n\nSi tienes una cuenta de Minecraft antigua (para iniciar sesi\u00f3n usar\u00edas un nombre de usuario, en vez de un email), tendr\u00e1s que migrar tu cuenta a una de Mojang para poder acceder a Realms.",
     "mco.account.update": "Actualizar cuenta",
     "mco.activity.noactivity": "Sin actividad desde hace %s d\u00eda(s)",
     "mco.activity.title": "Actividad de jugadores",
@@ -176,7 +177,7 @@
     "mco.selectServer.configure": "Configurar realm",
     "mco.selectServer.create": "Crear realm",
     "mco.selectServer.expired": "Realm caducado",
-    "mco.selectServer.expiredList": "Tu suscripci\u00f3n caduc\u00f3",
+    "mco.selectServer.expiredList": "Tu realm ha caducado",
     "mco.selectServer.expiredRenew": "Renovar",
     "mco.selectServer.expiredSubscribe": "Suscribirse",
     "mco.selectServer.expiredTrial": "Tu prueba termin\u00f3",
