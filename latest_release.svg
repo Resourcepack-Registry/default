@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="155" height="20">
+  <title>Latest Release - 1.21.8</title>
+  <defs>
+    <linearGradient id="workflow-fill" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop stop-color="#444D56" offset="0%"/>
+      <stop stop-color="#24292E" offset="100%"/>
+    </linearGradient>
+    <linearGradient id="state-fill" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop stop-color="#959DA5" offset="0%"/>
+      <stop stop-color="#6A737D" offset="100%"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <g font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="11px">
+      <path id="workflow_background" d="M0,3 C0,1.3431 1.3552,0 3.02702703,0 L108,0 L108,20 L3.02702703,20 C1.3552,20 0,18.6569 0,17 L0,3 Z" fill="url(#workflow-fill)" fill-rule="nonzero"/>
+      <text fill="#010101" fill-opacity=".3" aria-hidden="true">
+        <tspan x="22.1981982" y="15">Latest Release</tspan>
+      </text>
+      <text fill="#FFFFFF">
+        <tspan x="22.1981982" y="14">Latest Release</tspan>
+      </text>
+    </g>
+    <g transform="translate(108)" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="11px">
+      <path id="state_background" d="M0 0h43.47C44.869 0 46 1.343 46 3v14c0 1.657-1.132 3-2.53 3H0V0z" fill="url(#state-fill)" fill-rule="nonzero"/>
+      <text fill="#010101" fill-opacity=".3" aria-hidden="true">
+        <tspan x="5" y="15">1.21.8</tspan>
+      </text>
+      <text fill="#FFFFFF">
+        <tspan x="5" y="14">1.21.8</tspan>
+      </text>
+    </g>
+    <g transform="translate(3,3)" fill="#959DA5">
+      <svg width="14" height="14" viewBox="0 0 16 16">
+        <path d="M1 7.775V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 0 1 0 2.474l-5.026 5.026a1.75 1.75 0 0 1-2.474 0l-6.25-6.25A1.752 1.752 0 0 1 1 7.775Zm1.5 0c0 .066.026.13.073.177l6.25 6.25a.25.25 0 0 0 .354 0l5.025-5.025a.25.25 0 0 0 0-.354l-6.25-6.25a.25.25 0 0 0-.177-.073H2.75a.25.25 0 0 0-.25.25ZM6 5a1 1 0 1 1 0 2 1 1 0 0 1 0-2Z"></path>
+      </svg>
+    </g>
+  </g>
+</svg>

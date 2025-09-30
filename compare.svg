@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="203" height="20">
+  <title>Compare - 1.21.8 ... 1.21.9-rc1</title>
+  <defs>
+    <linearGradient id="workflow-fill" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop stop-color="#444D56" offset="0%"/>
+      <stop stop-color="#24292E" offset="100%"/>
+    </linearGradient>
+    <linearGradient id="state-fill" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop stop-color="#959DA5" offset="0%"/>
+      <stop stop-color="#6A737D" offset="100%"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <g font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="11px">
+      <path id="workflow_background" d="M0,3 C0,1.3431 1.3552,0 3.02702703,0 L78,0 L78,20 L3.02702703,20 C1.3552,20 0,18.6569 0,17 L0,3 Z" fill="url(#workflow-fill)" fill-rule="nonzero"/>
+      <text fill="#010101" fill-opacity=".3" aria-hidden="true">
+        <tspan x="22.1981982" y="15">Compare</tspan>
+      </text>
+      <text fill="#FFFFFF">
+        <tspan x="22.1981982" y="14">Compare</tspan>
+      </text>
+    </g>
+    <g transform="translate(78)" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="11px">
+      <path id="state_background" d="M0 0h121.47C122.869 0 124 1.343 124 3v14c0 1.657-1.132 3-2.53 3H0V0z" fill="url(#state-fill)" fill-rule="nonzero"/>
+      <text fill="#010101" fill-opacity=".3" aria-hidden="true">
+        <tspan x="5" y="15">1.21.8 ... 1.21.9-rc1</tspan>
+      </text>
+      <text fill="#FFFFFF">
+        <tspan x="5" y="14">1.21.8 ... 1.21.9-rc1</tspan>
+      </text>
+    </g>
+    <g transform="translate(3,3)" fill="#959DA5">
+      <svg width="14" height="14" viewBox="0 0 16 16">
+        <path d="M9.573.677A.25.25 0 0 1 10 .854V2.5h1A2.5 2.5 0 0 1 13.5 5v5.628a2.251 2.251 0 1 1-1.5 0V5a1 1 0 0 0-1-1h-1v1.646a.25.25 0 0 1-.427.177L7.177 3.427a.25.25 0 0 1 0-.354ZM6 12v-1.646a.25.25 0 0 1 .427-.177l2.396 2.396a.25.25 0 0 1 0 .354l-2.396 2.396A.25.25 0 0 1 6 15.146V13.5H5A2.5 2.5 0 0 1 2.5 11V5.372a2.25 2.25 0 1 1 1.5 0V11a1 1 0 0 0 1 1ZM4 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0ZM12.75 12a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Z"></path>
+      </svg>
+    </g>
+  </g>
+</svg>
