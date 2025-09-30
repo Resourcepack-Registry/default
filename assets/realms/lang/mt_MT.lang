@@ -13,19 +13,20 @@ mco.backup.nobackups=Din ir-realm m'għandhiex backups bħalissa.
 mco.backup.restoring=Ir-realm tiegħek qed tiġi restawrata
 mco.brokenworld.download=Niżżel
 mco.brokenworld.downloaded=Imniżżlin
-mco.brokenworld.message=Jekk jogħġbok irrisettja jew agħżel dinja oħra.
-Tista' ukoll tagħżel li tniżżel id-dinja għal singleplayer.
+mco.brokenworld.message.line1=Jekk jogħġbok irrisettja jew agħżel dinja oħra.
+mco.brokenworld.message.line2=Tista' ukoll tagħżel li tniżżel id-dinja għal singleplayer.
+mco.brokenworld.minigame.title=Din il-minigame m'għadhiex sapportjata
 mco.brokenworld.play=Ilgħab
 mco.brokenworld.reset=Irrisettja
 mco.brokenworld.title=Id-dinja kurrenti tiegħek m'għadhiex sapportjata
 mco.buy.realms.buy=Nixtieq waħda!
 mco.buy.realms.title=Ixtri Realm
-mco.client.incompatible.msg=Il-client tiegħek mhuwiex kompatibbli ma' Realms.
-Jekk jogħġbok uża l-iktar verżjoni riċenti ta' Minecraft.
-Realms mhuwiex kompatibbli ma' verżjonijiet snapshots.
+mco.client.incompatible.msg.line1=Il-client tiegħek mhuwiex kompatibbli ma' Realms.
+mco.client.incompatible.msg.line2=Jekk jogħġbok uża l-verżjoni l-aktar riċenti ta' Minecraft.
+mco.client.incompatible.msg.line3=Realms mhuwiex kompatibbli mal-verżjonijiet snapshots.
 mco.client.incompatible.title=Client Inkompatibbli!
-mco.client.outdated.msg=Il-client tiegħek hu qadim u mhuwiex kompatibbli ma' Realms.
-Jekk jogħġbok niżżel l-iktar verżjoni riċenti ta' Minecraft.
+mco.client.outdated.msg.line1=Il-client tiegħek huwa antik u mhuwiex kompatibbli ma' Realms.
+mco.client.outdated.msg.line2=Jekk jogħġbok niżżel il-verżjoni l-aktar riċenti ta' Minecraft.
 mco.client.outdated.title=Client Qadim!
 mco.configure.current.minigame=Kurrenti
 mco.configure.world.backup=Backups ta' Dinjiet
@@ -130,6 +131,8 @@ mco.download.extracting=Estrazzjoni
 mco.download.failed=Tniżżil falla
 mco.download.preparing=It-tniżżil qed jiġi ppreparat
 mco.download.title=Qed titniżżel l-aħħar dinja
+mco.error.invalid.session.message=Jekk jogħġbok ipprova erġa iftaħ Minecraft
+mco.error.invalid.session.title=Id tas-sessjoni invalidu
 mco.errorMessage.6001=Client qadim
 mco.errorMessage.6002=ToS għadom mhux aċċettati
 mco.errorMessage.6003=Intlaħaq il-limitu tat-tniżżil
@@ -143,8 +146,8 @@ mco.invites.nopending=M'hawnx stediniet pendenti!
 mco.invites.pending=Stediniet ġodda!
 mco.invites.title=Stediniet Pendenti
 mco.minigame.world.changeButton=Agħżel Minigame Oħra
-mco.minigame.world.info=Id-dinja tiegħek ħa tiġi mibdula f'minigame temporanjament!
-Aktar tard tkun tista' tirritorna lura għad-dinja oriġinali mingħajr ma titlef xejn.
+mco.minigame.world.info.line1=Id-dinja tiegħek ħa tinbidel għal ġo minigame temporanjament!
+mco.minigame.world.info.line2=Aktar tard tkun tista' tirritorna għal ġod-dinja oriġinali mingħajr ma titlef xejn.
 mco.minigame.world.noSelection=Jekk jogħġbok agħmel għażla
 mco.minigame.world.restore=Il-Minigame ħa tieqaf...
 mco.minigame.world.restore.question.line1=Il-minigame tieqaf u int terġa tirritorna għal gor-Realm tiegħek.
@@ -163,8 +166,6 @@ mco.reset.world.resetting.screen.title=Ir-realm qed tiġi rrisettjata...
 mco.reset.world.seed=Seed (jekk trid)
 mco.reset.world.template=Mapep tas-sopravivenza
 mco.reset.world.title=Irrisettja r-Realm
-mco.reset.world.updateBreaksAdventure=Qabel ma tibda l-avventura tiegħek, ħu nota:
-L-update ta' Minecraft li jmiss tista' tagħmel ħsara lil uħud minn dawn il-mapep!
 mco.reset.world.upload=Uploadja dinja
 mco.reset.world.warning=Id-dinja tar-Realm ħa titħassar b'mod permanenti!
 mco.selectServer.buy=Ixtri Realm!
@@ -194,7 +195,6 @@ mco.selectServer.play=Ilgħab
 mco.selectServer.popup=Realms huwa mod sempliċi u sikur kif tista' tilgħab f'dinja ta' Minecraft online ma' mhux aktar minn għaxar persuni fl-istess ħin. Dan jinkludi ħafna minigames u dinjiet personalizzati! Is-sid tar-Realm biss irid iħallas.
 mco.selectServer.trial=Ipprovah!
 mco.selectServer.uninitialized=Ikklikkja biex Toħloq Realm!
-mco.selectServer.updateBreaksAdventure=L-update li jmiss ħa tirrovina din il-mappa!
 mco.template.button.select=Agħżel
 mco.template.default.name=Agħżel Template (jekk trid)
 mco.template.info.tooltip=Website tal-pubblikatur
@@ -207,8 +207,8 @@ mco.terms.buttons.disagree=Irrifjuta
 mco.terms.sentence.1=Jien naqbel mat-Termini tas-Servizz
 mco.terms.sentence.2=Termini tas-Servizz
 mco.terms.title=Termini tas-Servizz ta' Realms
-mco.trial.message=Tixtieq iġġib Realm għalik? 
- Afgħas hawn għal aktar informazzjoni!
+mco.trial.message.line1=Tixtieq takkwista Realm għalik?
+mco.trial.message.line2=Afgħas hawn għal aktar informazzjoni!
 mco.trial.title=Oħloq Realm
 mco.trial.unavailable=Jiddispjaċina, trials mhumiex disponibbli bħalissa!
 mco.upload.button.name=Upload
@@ -221,7 +221,7 @@ mco.upload.preparing=Id-dinja qed tiġi ppreparata
 mco.upload.select.world.none=Ma nstabu ebda dinjiet singleplayer!
 mco.upload.select.world.subtitle=Jekk jogħġbok agħżel dinja singleplayer
 mco.upload.select.world.title=Uploadja d-dinja tiegħek
-mco.upload.size.failure='%s' hu kbir wisq!
-Huwa %s. Il-kobor massimu hu %s.
+mco.upload.size.failure.line1="%s" hu kbir wisq!
+mco.upload.size.failure.line2=Huwa %s. Il-kobor massimu hu %s.
 mco.upload.uploading='%s' qed tiġi uploadjata
 mco.upload.verifying=Il-mappa qed tiġi vverifikata

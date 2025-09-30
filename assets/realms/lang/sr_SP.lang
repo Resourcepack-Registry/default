@@ -162,7 +162,6 @@ mco.selectServer.play=Играј
 mco.selectServer.popup=Краљевства су сигуран и једноставан начин да уживате у онлајн Мајнкрафт свету са до десет пријатеља истовремено. Подржава гомилу мини-игара и много прилагођених светова! Само власник Краљевства мора платити.
 mco.selectServer.trial=Испробајте бесплатно!
 mco.selectServer.uninitialized=Кликни за креирање Релмса!
-mco.selectServer.updateBreaksAdventure=Следећа исправка ће уништити свет!
 mco.template.button.select=Изабери
 mco.template.default.name=Изабери шаблон (по жељи)
 mco.template.info.tooltip=Интернет сајт објављивача

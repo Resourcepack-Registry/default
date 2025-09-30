@@ -13,20 +13,20 @@ mco.backup.nobackups=Dette rige har i øjeblikket ingen sikkerhedskopieringer.
 mco.backup.restoring=Genskaber dit realm
 mco.brokenworld.download=Download
 mco.brokenworld.downloaded=Downloaded
-mco.brokenworld.message=Vælg venlist en anden verden eller nulstil.
-Du kan også vælge at downloade verdenen til offline brug.
+mco.brokenworld.message.line1=Nulstil venligst eller Vælg en anden verden.
+mco.brokenworld.message.line2=Du kan også vælge at downloade verden til singleplayer.
 mco.brokenworld.minigame.title=Dette minigame er ikke længere understøttet
 mco.brokenworld.play=Spil
 mco.brokenworld.reset=Nulstil
 mco.brokenworld.title=Din nuværende verden er ikke længere understøttet
 mco.buy.realms.buy=Jeg vil have en!
 mco.buy.realms.title=Køb et Realm
-mco.client.incompatible.msg=Din klient er ikke kompatibel med Realms.
-Brug venligst den seneste version af Minecraft.
-Realms er ikke kompatibel med snapshot versioner.
+mco.client.incompatible.msg.line1=Din klient er ikke kompatibel med Riger.
+mco.client.incompatible.msg.line2=Brug venligst den nyeste version af Minecraft.
+mco.client.incompatible.msg.line3=Riger er ikke kompatibel med snapshot versioner.
 mco.client.incompatible.title=Klient inkompatibel!
-mco.client.outdated.msg=Din klient er forældet og ikke kompitabel med Realms.
-Opdater venligst til den seneste version af Minecraft.
+mco.client.outdated.msg.line1=Din klient er forældet og ikke kompatibel med Riger.
+mco.client.outdated.msg.line2=Opdatere venligst til den nyeste version af Minecraft.
 mco.client.outdated.title=Klient forældet!
 mco.configure.current.minigame=Nuværende
 mco.configure.world.backup=Verden backups
@@ -131,6 +131,8 @@ mco.download.extracting=Udpakker
 mco.download.failed=Download mislykkedes
 mco.download.preparing=Forbereder download
 mco.download.title=Downloader seneste verden
+mco.error.invalid.session.message=Prøv at genstarte Minecraft
+mco.error.invalid.session.title=Ugyldigt session-id
 mco.errorMessage.6001=Klient forældet
 mco.errorMessage.6002=ToS ikke accepteret
 mco.errorMessage.6003=Download grænse nået
@@ -144,8 +146,8 @@ mco.invites.nopending=Ingen afventende invitationer!
 mco.invites.pending=Nye invitationer!
 mco.invites.title=Ventende Invitationer
 mco.minigame.world.changeButton=Vælg et andet Mini-spil
-mco.minigame.world.info=Dette vil midlertidigt udskifte din verden med et minigame!
-Du kan senere vende tilbage til din originale verden uden at miste noget.
+mco.minigame.world.info.line1=Dette vil midlertidigt erstatte din verden med et mini-spil!
+mco.minigame.world.info.line2=Du kan senere vende tilbage til din oprindelige verden uden at miste noget.
 mco.minigame.world.noSelection=Vær venlig at vælge noget
 mco.minigame.world.restore=Slutter Mini-spil...
 mco.minigame.world.restore.question.line1=Mini-spillet vil slutte og dit Realm vil blive genoprettet.
@@ -164,8 +166,6 @@ mco.reset.world.resetting.screen.title=Nulstiller Verden...
 mco.reset.world.seed=Seed (Valgfrit)
 mco.reset.world.template=Overlevelses spawns
 mco.reset.world.title=Nulstil Verden
-mco.reset.world.updateBreaksAdventure=Før du starter dit eventyr:
-Den næste Minecraft opdatering ødelægger måske nogle af de her verdener!
 mco.reset.world.upload=Upload verden
 mco.reset.world.warning=Dette vil slette dit Realms nuværende verden!
 mco.selectServer.buy=Køb en Realm!
@@ -195,7 +195,6 @@ mco.selectServer.play=Spil
 mco.selectServer.popup=Realms er en sikker, simpel måde at nyde en online Minecraft verden med op til ti venner ad gangen.   Det understøtter mange forskellige verdener med minigames eller dine egne verdener! Kun ejeren af et Realm skal betale.
 mco.selectServer.trial=Få en prøveperiode!
 mco.selectServer.uninitialized=Klik for at oprette Realm!
-mco.selectServer.updateBreaksAdventure=Næste opdatering vil ødelægge denne verden!
 mco.template.button.select=Vælg
 mco.template.default.name=Vælg skabelon (valgfrit)
 mco.template.info.tooltip=Udgiverens webside
@@ -208,8 +207,8 @@ mco.terms.buttons.disagree=Accepter ikke
 mco.terms.sentence.1=Jeg accepterer Minecraft Realms
 mco.terms.sentence.2=Servicevilkår
 mco.terms.title=Realms Servicevilkår
-mco.trial.message=Vil du have dit eget Realm? 
- Klik her for mere info!
+mco.trial.message.line1=Ønsker du at få dit egen Rige?
+mco.trial.message.line2=Klik her for mere info!
 mco.trial.title=Opret et Realm
 mco.trial.unavailable=Undskyld, prøveversioner er ikke tilgængelige i øjeblikket!
 mco.upload.button.name=Upload
@@ -222,7 +221,7 @@ mco.upload.preparing=Klargører dit verdensdata
 mco.upload.select.world.none=Ingen verdener fundet!
 mco.upload.select.world.subtitle=Vælg venligst den verden du vil bruge
 mco.upload.select.world.title=Upload verden
-mco.upload.size.failure='%s' er for stort!
-det er %s. Den maximale størrelse er %s.
+mco.upload.size.failure.line1='%s' er for store!
+mco.upload.size.failure.line2=Det er %s. Den maksimale tilladte størrelse er %s.
 mco.upload.uploading=Uploader '%s'
 mco.upload.verifying=Godkender din verden

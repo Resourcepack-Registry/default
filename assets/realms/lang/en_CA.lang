@@ -1,5 +1,5 @@
 language.code=en_CA
-language.name=Canadian English
+language.name=English
 language.region=Canada
 mco.activity.noactivity=No activity for the past %s days
 mco.activity.title=Player Activity
@@ -13,20 +13,20 @@ mco.backup.nobackups=This Realm doesn't have any backups currently.
 mco.backup.restoring=Restoring your Realm
 mco.brokenworld.download=Download
 mco.brokenworld.downloaded=Downloaded
-mco.brokenworld.message=Please reset or select another world.
-You can also choose to download the world to singleplayer.
+mco.brokenworld.message.line1=Please reset or select another world.
+mco.brokenworld.message.line2=You can also choose to download the world to singleplayer.
 mco.brokenworld.minigame.title=This mini-game is no longer supported
 mco.brokenworld.play=Play
 mco.brokenworld.reset=Reset
 mco.brokenworld.title=Your current world is no longer supported
 mco.buy.realms.buy=I want one!
 mco.buy.realms.title=Buy a Realm
-mco.client.incompatible.msg=Your client is not compatible with Realms.
-Please use the most recent version of Minecraft.
-Realms is not compatible with snapshot versions.
+mco.client.incompatible.msg.line1=Your client is not compatible with Realms.
+mco.client.incompatible.msg.line2=Please use the most recent version of Minecraft.
+mco.client.incompatible.msg.line3=Realms is not compatible with snapshot versions.
 mco.client.incompatible.title=Client Incompatible!
-mco.client.outdated.msg=Your client is outdated and not compatible with Realms.
-Please update to the most recent version of Minecraft.
+mco.client.outdated.msg.line1=Your client is outdated and not compatible with Realms.
+mco.client.outdated.msg.line2=Please update to the most recent version of Minecraft.
 mco.client.outdated.title=Client Outdated!
 mco.configure.current.minigame=Current
 mco.configure.world.backup=World backups
@@ -131,6 +131,8 @@ mco.download.extracting=Extracting
 mco.download.failed=Download failed
 mco.download.preparing=Preparing Download
 mco.download.title=Downloading Latest World
+mco.error.invalid.session.message=Please try restarting Minecraft
+mco.error.invalid.session.title=Invalid session id
 mco.errorMessage.6001=Client outdated
 mco.errorMessage.6002=ToS not accepted
 mco.errorMessage.6003=Download limit reached
@@ -144,8 +146,8 @@ mco.invites.nopending=No pending invites!
 mco.invites.pending=New invites!
 mco.invites.title=Pending Invites
 mco.minigame.world.changeButton=Select Another Mini Game
-mco.minigame.world.info=This will temporarily replace your world with a mini game!
-You can later return to your original world without losing anything.
+mco.minigame.world.info.line1=This will temporarily replace your world with a mini game!
+mco.minigame.world.info.line2=You can later return to your original world without losing anything.
 mco.minigame.world.noSelection=Please make a selection
 mco.minigame.world.restore=Ending Mini Game...
 mco.minigame.world.restore.question.line1=The mini game will end and your Realm will be restored.
@@ -164,8 +166,6 @@ mco.reset.world.resetting.screen.title=Resetting World...
 mco.reset.world.seed=Seed (Optional)
 mco.reset.world.template=Survival spawns
 mco.reset.world.title=Reset World
-mco.reset.world.updateBreaksAdventure=Before going on your adventure please note:
-The next Minecraft update might break some of these maps!
 mco.reset.world.upload=Upload world
 mco.reset.world.warning=This will delete your Realm's current world!
 mco.selectServer.buy=Buy a Realm!
@@ -195,7 +195,6 @@ mco.selectServer.play=Play
 mco.selectServer.popup=Realms is a safe, simple way to enjoy an online Minecraft world with up to ten friends at a time.   It supports loads of minigames and plenty of custom worlds! Only the owner of the Realm needs to pay.
 mco.selectServer.trial=Get a trial!
 mco.selectServer.uninitialized=Click to Create Realm!
-mco.selectServer.updateBreaksAdventure=Next update will break this map!
 mco.template.button.select=Select
 mco.template.default.name=World template
 mco.template.info.tooltip=Publisher website
@@ -208,8 +207,8 @@ mco.terms.buttons.disagree=Don't Agree
 mco.terms.sentence.1=I agree to Minecraft Realms
 mco.terms.sentence.2=Terms of Service
 mco.terms.title=Realms Terms of Service
-mco.trial.message=Want to get your own Realm? 
- Click here for more info!
+mco.trial.message.line1=Want to get your own Realm?
+mco.trial.message.line2=Click here for more info!
 mco.trial.title=Create a Realm
 mco.trial.unavailable=Sorry, trials are unavailable at this time!
 mco.upload.button.name=Upload
@@ -222,7 +221,7 @@ mco.upload.preparing=Preparing your world data
 mco.upload.select.world.none=No singleplayer worlds found!
 mco.upload.select.world.subtitle=Please select a singleplayer world to upload
 mco.upload.select.world.title=Upload world
-mco.upload.size.failure='%s' is too big!
-It is %s. The maximum allowed size is %s.
+mco.upload.size.failure.line1='%s' is too big!
+mco.upload.size.failure.line2=It is %s. The maximum allowed size is %s.
 mco.upload.uploading=Uploading '%s'
 mco.upload.verifying=Verifying your world
