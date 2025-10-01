@@ -74,7 +74,8 @@ jobs:
       - name: 'Check for existing version tag'
         id: 'check-for-existing-tag'
         run: |
-          tag=${{ env.INPUT_VERSION || steps.fetch-latest-version.outputs.LATEST_SNAPSHOT }}
+          version="${{ env.INPUT_VERSION || steps.fetch-latest-version.outputs.LATEST_SNAPSHOT }}"
+          tag="${version// /_}"
           
           if git show-ref --tags --verify --quiet "refs/tags/$tag"; then
             echo "Tag \"$tag\" already exists. Skipping next jobs."
