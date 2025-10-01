@@ -36,7 +36,7 @@ jobs:
 
           gh extension install Link-/gh-token
           
-          for version in $(echo "$versions" | jq -r '.[]'); do
+          jq -r '.[]' <<< "$versions" | while IFS= read -r version; do
             echo "Version: \"$version\""
             
             echo "Generating installation token"
