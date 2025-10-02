@@ -2,6 +2,8 @@
   "pack": {
     "pack_format": 51,
     "description": "The classic look of Minecraft",
-    "supported_formats": [51, 64]
+    "supported_formats": [51, 64],
+    "min_format": 51,
+    "max_format": 69
   }
 }
