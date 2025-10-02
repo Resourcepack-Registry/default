@@ -43,14 +43,7 @@ jobs:
             i=$((i+1))
             percent=$(awk "BEGIN {printf \"%.0f\", ($i/$total)*100}")
 
-            echo "Version: \"$version\""
-
-            {
-              echo "# Assets Generation Progress"
-              echo "- Iteration **$i / $total**  (${percent}%)"
-              echo "- Processing version: \`$version\`"
-              echo ""
-            } > $GITHUB_STEP_SUMMARY
+            echo "::notice title=Progress::$i/$total (${percent}%) – Processing $version"
             
             echo "Generating installation token"
             echo "$APP_PRIVATE_KEY" > private-key.pem
