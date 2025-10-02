@@ -43,7 +43,7 @@ jobs:
             i=$((i+1))
             percent=$(awk "BEGIN {printf \"%.0f\", ($i/$total)*100}")
 
-            echo "::info:: $i/$total (${percent}%) – Processing \"$version\""
+            echo "::group::Processing \"$version\" - $i/$total (${percent}%)"
             
             echo "Generating installation token"
             echo "$APP_PRIVATE_KEY" > private-key.pem
@@ -69,4 +69,6 @@ jobs:
             gh run watch "$run_id" --compact --exit-status > /dev/null 2>&1
 
             echo "Run $run_id done!"
+
+            echo "::endgroup::"
           done
