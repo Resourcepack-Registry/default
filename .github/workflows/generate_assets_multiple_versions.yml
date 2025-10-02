@@ -43,7 +43,7 @@ jobs:
             i=$((i+1))
             percent=$(awk "BEGIN {printf \"%.0f\", ($i/$total)*100}")
 
-            echo "::notice title=Progress::$i/$total (${percent}%) – Processing $version"
+            echo "::info:: $i/$total (${percent}%) – Processing \"$version\""
             
             echo "Generating installation token"
             echo "$APP_PRIVATE_KEY" > private-key.pem
