@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/stairs",
-  "textures": {
-    "bottom": "minecraft:block/baked_potato_bricks",
-    "side": "minecraft:block/baked_potato_bricks",
-    "top": "minecraft:block/baked_potato_bricks"
-  }
-}
