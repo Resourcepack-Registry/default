@@ -38,17 +38,17 @@ flowchart TD
     -->
     TAG_EXISTS_NO-C[Check if<br>**Snapshot == Release**]
     -->
-    TAG_EXISTS_NO-SAME{Same}
+    TAG_EXISTS_NO-EQUAL{Equal}
     -->
-    |Yes| TAG_EXISTS_NO-SAME_YES-A[**Remove** old<br>'latest-release' tag]
+    |Yes| TAG_EXISTS_NO-EQUAL_YES-A[**Remove** old<br>'latest-release' tag]
     -->
-    TAG_EXISTS_NO-SAME_YES-B[**Add** new<br>'latest-release' tag]
+    TAG_EXISTS_NO-EQUAL_YES-B[**Add** new<br>'latest-release' tag]
     
-    TAG_EXISTS_NO-SAME
+    TAG_EXISTS_NO-EQUAL
     -->
     |No| TAG_EXISTS_NO-D[**Remove** old<br>'latest-release' tag]
     
-    TAG_EXISTS_NO-SAME_YES-B
+    TAG_EXISTS_NO-EQUAL_YES-B
     -->
     TAG_EXISTS_NO-D
 
