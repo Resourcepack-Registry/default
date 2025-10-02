@@ -1,7 +1,6 @@
 {
   "pack": {
-    "pack_format": 22,
-    "description": "Enhances the UI contrast of Minecraft",
-    "supported_formats": [22, 26]
+    "pack_format": 28,
+    "description": "Enhances the UI contrast of Minecraft"
   }
 }
