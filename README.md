@@ -34,7 +34,7 @@ flowchart TD
     -->
     |No| TAG_EXISTS_NO-A[Download new<br>**Snapshot** Assets]
     -->
-    TAG_EXISTS_NO-B[**Add** respective<br>version tag]
+    TAG_EXISTS_NO-B[**Add** corresponding<br>version tag]
     -->
     TAG_EXISTS_NO-C[Check if<br>**Snapshot == Release**]
     -->
