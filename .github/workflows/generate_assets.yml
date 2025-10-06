@@ -8,8 +8,8 @@ env:
   MANIFEST_URL: 'https://piston-meta.mojang.com/mc/game/version_manifest_v2.json'
 
 on:
-  # schedule:
-  #   - cron: '30 0,12 * * *' # Runs at 00:30 and 12:30, every day
+  schedule:
+    - cron: '30 0,12 * * *' # Runs at 00:30 and 12:30, every day
 
   workflow_call:
     inputs:
