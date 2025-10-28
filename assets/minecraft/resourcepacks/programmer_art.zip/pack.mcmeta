@@ -4,6 +4,6 @@
     "description": "The classic look of Minecraft",
     "supported_formats": [51, 64],
     "min_format": 51,
-    "max_format": 71
+    "max_format": 72
   }
 }
