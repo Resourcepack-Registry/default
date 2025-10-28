@@ -70,6 +70,6 @@ flowchart TD
 ```
 
 ## Disclaimer
-The purpose of this repository is **not** to "redistribute" Minecraft assets. It should just simply serve as an easy and convenient way to view the differences between one version and another.
+The purpose of this repository is **not** to "redistribute" Minecraft assets! It should just simply serve as an easy and convenient way to view the differences between one version and another.
 
 This repository assumes that because Mojang intentionally provides a public API for downloading the `client.jar`, they have no objection to the resulting generated assets existing anywhere on the internet for public consumption. If this assumption is ever contradicted, the repository will be removed immediately.
