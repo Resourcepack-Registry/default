@@ -8,6 +8,8 @@
 
 This repository keeps track of Minecrafts generated default assets for a resourcepack for every version since version [`rd-132211`](https://minecraft.wiki/w/Java_Edition_pre-Classic_rd-132211). Every hour a check is made to see if there is a new Minecraft version. If a new version is available, it will be published on the [`generated`](https://github.com/Resourcepack-Registry/default/tree/generated) branch with the corresponding tag of the version.
 
+Generated Data can be found here: [Datapack-Registry/default](https://github.com/Datapack-Registry/default)
+
 ## Structure
 Individual files can be viewed by the corresponding version tag:
 ```url
