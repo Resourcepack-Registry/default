@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="201" height="20">
-  <title>Latest Snapshot - 1.21.11-pre4</title>
+  <title>Latest Snapshot - 1.21.11-pre5</title>
   <defs>
     <linearGradient id="workflow-fill" x1="50%" y1="0%" x2="50%" y2="100%">
       <stop stop-color="#444D56" offset="0%"/>
@@ -23,10 +23,10 @@
     <g transform="translate(117)" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="11px">
       <path id="state_background" d="M0 0h80.47C81.869 0 83 1.343 83 3v14c0 1.657-1.132 3-2.53 3H0V0z" fill="url(#state-fill)" fill-rule="nonzero"/>
       <text fill="#010101" fill-opacity=".3" aria-hidden="true">
-        <tspan x="5" y="15">1.21.11-pre4</tspan>
+        <tspan x="5" y="15">1.21.11-pre5</tspan>
       </text>
       <text fill="#FFFFFF">
-        <tspan x="5" y="14">1.21.11-pre4</tspan>
+        <tspan x="5" y="14">1.21.11-pre5</tspan>
       </text>
     </g>
     <g transform="translate(3,3)" fill="#959DA5">
