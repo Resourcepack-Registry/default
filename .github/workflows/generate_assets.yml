@@ -1,4 +1,4 @@
-name: 'Generate Assets'
+name: 'Generate assets'
 env:
   GENERATED_BRANCH: 'generated'
   PROCESSED_BRANCH: 'processed'
