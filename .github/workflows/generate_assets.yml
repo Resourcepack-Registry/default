@@ -207,7 +207,44 @@ jobs:
     outputs:
       LATEST_RELEASE: ${{ needs.generate-new-assets.outputs.LATEST_RELEASE }}
       LATEST_SNAPSHOT: ${{ needs.generate-new-assets.outputs.LATEST_SNAPSHOT }}
-      
+
+  trigger-other-repositories:
+    name: 'Trigger other repositories'
+    needs: ['commit-and-tag-new-assets']
+    runs-on: ubuntu-24.04
+    env:
+      LATEST_RELEASE: ${{ needs.commit-and-tag-new-assets.outputs.LATEST_RELEASE }}
+      LATEST_SNAPSHOT: ${{ needs.commit-and-tag-new-assets.outputs.LATEST_SNAPSHOT }}
+      REPOSITORIES_TO_TRIGGER: "font"
+  
+    steps:
+      - name: 'Generate GitHub App token'
+        id: 'app-token'
+        uses: actions/create-github-app-token@v1
+        with:
+          app-id: ${{ secrets.APP_ID }}
+          private-key: ${{ secrets.APP_PRIVATE_KEY }}
+  
+      - name: 'Trigger other repositories'
+        run: |
+          # Split REPOS_TO_TRIGGER into array
+          IFS=',' read -ra REPOSITORY_ARRAY <<< "$REPOSITORIES_TO_TRIGGER"
+          
+          for repo in "${REPOSITORY_ARRAY[@]}"; do
+            echo "Triggering \"$repo\"..."
+            curl -X POST \
+              -H "Authorization: Bearer ${{ steps.app-token.outputs.token }}" \
+              -H "Accept: application/vnd.github+json" \
+              https://api.github.com/repos/${{ github.repository_owner }}/$repo/dispatches \
+              -d '{
+                "event_type": "new-assets",
+                "client_payload": {
+                  "latest_release": "'"$LATEST_RELEASE"'",
+                  "latest_snapshot": "'"$LATEST_SNAPSHOT"'"
+                }
+              }'
+          done
+    
   generate-badges:
     name: 'Generate badge'
     needs: ['commit-and-tag-new-assets']
