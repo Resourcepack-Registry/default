@@ -31,12 +31,8 @@ jobs:
     runs-on: ubuntu-24.04
     env:
       INPUT_VERSION: ${{ inputs.version || github.event.client_payload.version }}
+
     steps:
-      - name: 'Checkout repository'
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-          
       - name: 'Get Manifest information'
         id: 'manifest'
         uses: MinecraftPlayground/manifest@main
@@ -44,6 +40,11 @@ jobs:
           version: ${{ env.INPUT_VERSION || 'latest-snapshot' }}
           if-version-is-invalid: 'error'
 
+      - name: 'Checkout repository'
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          
       - name: 'Check for existing version tag'
         id: 'check-for-existing-tag'
         run: |
