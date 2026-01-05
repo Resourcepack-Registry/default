@@ -41,7 +41,7 @@ jobs:
         id: 'manifest'
         uses: MinecraftPlayground/manifest@main
         with:
-          version: env.INPUT_VERSION
+          version: ${{ env.INPUT_VERSION || 'latest-snapshot' }}
 
       - name: 'Check if input version is valid'
         if: env.INPUT_VERSION != ''
