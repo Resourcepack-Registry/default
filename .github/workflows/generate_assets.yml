@@ -36,45 +36,26 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          
+      - name: 'Get Manifest information'
+        id: 'manifest'
+        uses: MinecraftPlayground/manifest@main
+        with:
+          version: env.INPUT_VERSION
 
       - name: 'Check if input version is valid'
         if: env.INPUT_VERSION != ''
-        run: |          
-          if curl -sL "$MANIFEST_URL" \
-              | jq -e --arg v "$INPUT_VERSION" '.versions[].id | select(. == $v)' > /dev/null; then
-            echo "Version \"$INPUT_VERSION\" is valid."
-          else
-            echo "Version \"$INPUT_VERSION\" is not valid."
-            exit 1
-          fi
-
-      - name: 'Fetch latest Minecraft version'
-        id: 'fetch-latest-version'
         run: |
-          read LATEST_RELEASE LATEST_SNAPSHOT < <(
-            curl -sL "$MANIFEST_URL" | jq -r '[.latest.release, .latest.snapshot] | @tsv'
-          )
-
-          if [ -z "$LATEST_RELEASE" ]; then
-            echo "::error:: Could not fetch latest release from manifest."
+          if [[ "${{ contains(fromJSON(steps.manifest.outputs.versions), env.INPUT_VERSION) }}" != "true" ]]; then
+            echo "Version \"${INPUT_VERSION}\" is not valid."
             exit 1
           fi
-          
-          if [ -z "$LATEST_SNAPSHOT" ]; then
-            echo "::error:: Could not fetch latest snapshot from manifest."
-            exit 1
-          fi
-          
-          echo "Latest release version: \"$LATEST_RELEASE\""
-          echo "Latest snapshot version: \"$LATEST_SNAPSHOT\""
-          
-          echo "LATEST_RELEASE=$LATEST_RELEASE" >> "$GITHUB_OUTPUT"
-          echo "LATEST_SNAPSHOT=$LATEST_SNAPSHOT" >> "$GITHUB_OUTPUT"
+          echo "Version \"${INPUT_VERSION}\" is valid."
 
       - name: 'Check for existing version tag'
         id: 'check-for-existing-tag'
         run: |
-          version="${{ env.INPUT_VERSION || steps.fetch-latest-version.outputs.LATEST_SNAPSHOT }}"
+          version="${{ env.INPUT_VERSION || steps.manifest.outputs.latest-snapshot-version }}"
           tag="${version// /_}"
           
           if git show-ref --tags --verify --quiet "refs/tags/$tag"; then
@@ -88,9 +69,9 @@ jobs:
     outputs:
       TAG_EXISTS: ${{ steps.check-for-existing-tag.outputs.TAG_EXISTS }}
       INPUT_VERSION: ${{ inputs.version || github.event.client_payload.version }}
-      SELECTED_VERSION: ${{ inputs.version || github.event.client_payload.version || steps.fetch-latest-version.outputs.LATEST_SNAPSHOT }}
-      LATEST_RELEASE: ${{ steps.fetch-latest-version.outputs.LATEST_RELEASE }}
-      LATEST_SNAPSHOT: ${{ steps.fetch-latest-version.outputs.LATEST_SNAPSHOT }}
+      SELECTED_VERSION: ${{ inputs.version || github.event.client_payload.version || steps.manifest.outputs.latest-snapshot-version }}
+      LATEST_RELEASE: ${{ steps.manifest.outputs.latest-release-version }}
+      LATEST_SNAPSHOT: ${{ steps.manifest.outputs.latest-snapshot-version }}
 
   generate-new-assets:
     name: 'Generate new assets'
