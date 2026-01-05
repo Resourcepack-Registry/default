@@ -42,15 +42,7 @@ jobs:
         uses: MinecraftPlayground/manifest@main
         with:
           version: ${{ env.INPUT_VERSION || 'latest-snapshot' }}
-
-      - name: 'Check if input version is valid'
-        if: env.INPUT_VERSION != ''
-        run: |
-          if [[ "${{ contains(fromJSON(steps.manifest.outputs.versions), env.INPUT_VERSION) }}" != "true" ]]; then
-            echo "Version \"${INPUT_VERSION}\" is not valid."
-            exit 1
-          fi
-          echo "Version \"${INPUT_VERSION}\" is valid."
+          if-version-is-invalid: 'error'
 
       - name: 'Check for existing version tag'
         id: 'check-for-existing-tag'
