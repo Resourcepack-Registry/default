@@ -1,0 +1,10 @@
+{
+  "parent": "minecraft:block/bed_foot",
+  "textures": {
+    "south": "minecraft:block/brown_bed_foot_south",
+    "east": "minecraft:block/brown_bed_foot_east",
+    "west": "minecraft:block/brown_bed_foot_west",
+    "up": "minecraft:block/brown_bed_foot_up",
+    "down": "minecraft:block/bed_foot_down"
+  }
+}
