@@ -225,7 +225,7 @@ jobs:
           label-text: 'Latest Snapshot'
           state-text: ${{ env.LATEST_SNAPSHOT }}
           
-      - name: 'Generate Badge (latest snapshot)'
+      - name: 'Generate Badge (compare)'
         id: 'generate-badge-compare'
         uses: loat-dev/action-badge@v1
         with:
