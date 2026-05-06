@@ -4,7 +4,7 @@
 [![Latest Snapshot](https://github.com/Resourcepack-Registry/default/blob/badge/latest_snapshot.svg?raw=true)](https://github.com/Resourcepack-Registry/default/tree/latest-snapshot)
 [![Compare](https://github.com/Resourcepack-Registry/default/blob/badge/compare.svg?raw=true)](https://github.com/Resourcepack-Registry/default/compare/latest-release...latest-snapshot)
 
-<img align="right" width="128" height="128" alt="image" src="https://github.com/user-attachments/assets/233905c0-2913-4c68-8854-74a96d18bb39" />
+<img align="right" width="128" height="128" alt="image" src="https://github.com/Resourcepack-Registry/.github/blob/main/profile/profile.png" />
 
 This repository keeps track of Minecrafts generated default assets for a resourcepack for every version since version [`rd-132211`](https://minecraft.wiki/w/Java_Edition_pre-Classic_rd-132211). Every hour a check is made to see if there is a new Minecraft version. If a new version is available, it will be published on the [`generated`](https://github.com/Resourcepack-Registry/default/tree/generated) branch with the corresponding tag of the version.
 
