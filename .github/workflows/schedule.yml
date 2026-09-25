@@ -1,0 +1,28 @@
+name: 'Schedule'
+
+on:
+  schedule:
+    - cron: '30 * * * *' # Runs at 30 minutes past the hour, every day
+
+  workflow_dispatch:
+    inputs:
+      version:
+        type: string
+        description: 'Run with a specific version. Leave blank for latest version.'
+        required: false
+
+jobs:
+  version:
+    name: "Version (${{ inputs.version || '\"latest\"' }})"
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Get latest Version'
+        if: !inputs.version
+        run: |
+          echo 'Fetching latest version'
+
+      - name: 'Using version'
+        run: |
+          echo 'Using version:'
+
+    
