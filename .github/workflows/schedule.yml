@@ -1,8 +1,8 @@
 name: 'Schedule'
 
 on:
-  schedule:
-    - cron: '30 * * * *' # Runs at 30 minutes past the hour, every day
+  # schedule:
+  #   - cron: '30 * * * *' # Runs at 30 minutes past the hour, every day
 
   workflow_dispatch:
     inputs:
