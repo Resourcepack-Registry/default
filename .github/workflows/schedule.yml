@@ -1,4 +1,5 @@
 name: 'Schedule'
+run-name: "Version (${{ inputs.version && format('\"{0}\"', inputs.version) || 'latest' }})"
 
 on:
   # schedule:
