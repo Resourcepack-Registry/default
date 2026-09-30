@@ -1,4 +1,4 @@
-name: 'Generate assets for multiple versions'
+name: 'Generate multiple versions'
 
 on:
   workflow_dispatch:
