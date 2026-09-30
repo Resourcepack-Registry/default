@@ -13,16 +13,17 @@ on:
 
 jobs:
   version:
-    name: "Version (${{ inputs.version || '\"latest\"' }})"
+    name: "Version (${{ inputs.version && '\"${{ inputs.version }}\"' || 'latest' }})"
     runs-on: ubuntu-latest
     steps:
-      - name: 'Get latest Version'
-        if: ${{ inputs.version == '' }}
-        run: |
-          echo 'Fetching latest version'
+      - name: 'Get version'
+        id: 'manifest'
+        uses: MinecraftPlayground/manifest@main
+        with:
+          version: ${{ inputs.version || 'latest-snapshot' }}
 
       - name: 'Using version'
         run: |
-          echo 'Using version:'
+          echo 'Using version: ${{ steps.manifest.outputs.version }}'
 
     
