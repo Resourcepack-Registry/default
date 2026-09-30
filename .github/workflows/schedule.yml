@@ -13,7 +13,7 @@ on:
 
 jobs:
   version:
-    name: "Version (${{ inputs.version && '\"${{ inputs.version }}\"' || 'latest' }})"
+    name: "Version (${{ inputs.version && format('\"{0}\"', inputs.version) || 'latest' }})"
     runs-on: ubuntu-latest
     steps:
       - name: 'Get version'
