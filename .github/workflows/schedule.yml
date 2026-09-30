@@ -1,9 +1,15 @@
 name: 'Schedule'
-run-name: "Version (${{ inputs.version && format('\"{0}\"', inputs.version) || 'latest' }})"
+description: 'Runs at 30 minutes past the hour, every day, checks if there is a new version and generates new assets.'
+env:
+  BRANCH_GENERATED: 'generated'
+  BRANCH_PROCESSED: 'processed'
+  BRANCH_BADGE: 'badge'
+  ARTIFACT_NAME: 'assets'
+  ARTIFACT_PATH: './downloaded_assets'
 
 on:
-  # schedule:
-  #   - cron: '30 * * * *' # Runs at 30 minutes past the hour, every day
+  schedule:
+    - cron: '30 * * * *' # Runs at 30 minutes past the hour, every day
 
   workflow_dispatch:
     inputs:
@@ -12,10 +18,11 @@ on:
         description: 'Run with a specific version. Leave blank for latest version.'
         required: false
 
+run-name: "Version (${{ inputs.version && format('\"{0}\"', inputs.version) || 'latest' }})"
 jobs:
   version:
     name: "Version (${{ inputs.version && format('\"{0}\"', inputs.version) || 'latest' }})"
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - name: 'Get version'
         id: 'manifest'
@@ -23,8 +30,201 @@ jobs:
         with:
           version: ${{ inputs.version || 'latest-snapshot' }}
 
-      - name: 'Using version'
+      - name: 'Checkout repository'
+        uses: actions/checkout@v7
+        with:
+          ref: ${{ env.BRANCH_GENERATED }}
+          fetch-depth: 0
+          
+      - name: 'Check for existing version tag'
+        id: 'check_for_existing_tag'
         run: |
-          echo 'Using version: ${{ steps.manifest.outputs.version }}'
+          version="${{ steps.manifest.outputs.version }}"
+          tag="${version// /_}"
+          
+          if git show-ref --tags --verify --quiet "refs/tags/$tag"; then
+            echo "Tag \"$tag\" already exists. Skipping next jobs."
+            echo "tag_exists=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "Tag \"$tag\" does not exist. Running next jobs."
+            echo "tag_exists=false" >> "$GITHUB_OUTPUT"
+          fi
 
-    
+    outputs:
+      tag_exists: ${{ steps.check_for_existing_tag.outputs.tag_exists }}
+      selected_version: ${{ steps.manifest.outputs.version }}
+      latest_release_version: ${{ steps.manifest.outputs.latest-release-version }}
+      latest_snapshot_version: ${{ steps.manifest.outputs.latest-snapshot-version }}
+      
+
+  generate:
+    name: 'Generate'
+    runs-on: ubuntu-24.04
+    needs: ['version']
+    if: needs.version.outputs.tag_exists == 'false'
+    steps:
+      - name: 'Generate for version "${{ needs.version.outputs.selected_version }}" to "${{ env.ARTIFACT_PATH }}"'
+        uses: MinecraftPlayground/generate-assets@main
+        with:
+          version: ${{ needs.version.outputs.selected_version }}
+          path: ${{ env.ARTIFACT_PATH }}
+          parallel-downloads: 10
+
+      - name: 'Upload'
+        uses: actions/upload-artifact@v7
+        with:
+          name: ${{ env.ARTIFACT_NAME }}
+          path: ${{ env.ARTIFACT_PATH }}
+
+  commit_and_tag:
+    name: 'Commit and tag'
+    runs-on: ubuntu-24.04
+    needs: ['version', 'generate']
+    steps:
+      - name: 'Generate GitHub App token'
+        id: 'app_token'
+        uses: actions/create-github-app-token@v3
+        with:
+          client-id: ${{ secrets.APP_ID }}
+          private-key: ${{ secrets.APP_PRIVATE_KEY }}
+
+      - name: 'Configure GIT'
+        run: |
+          git config --global user.name '${{ steps.app_token.outputs.app-slug }}[bot]'
+          git config --global user.email '${{ secrets.APP_USER_ID }}+${{ steps.app_token.outputs.app-slug }}[bot]@users.noreply.github.com'
+
+      - name: 'Checkout repository'
+        uses: actions/checkout@v7
+        with:
+          token: ${{ steps.app_token.outputs.token }}
+          ref: ${{ env.BRANCH_GENERATED }}
+
+      - name: 'Remove old files'
+        run: |
+          git rm -rf --ignore-unmatch "./"
+
+      - name: 'Download generated'
+        uses: actions/download-artifact@v8
+        with:
+          name: ${{ env.ARTIFACT_NAME }}
+          path: './'
+
+      - name: 'Commit and push'
+        env:
+          GH_TOKEN: ${{ steps.app_token.outputs.token }}
+          SELECTED_VERSION: ${{ needs.version.outputs.selected_version }}
+
+        run: |
+          COMMIT_MESSAGE="New assets for version $SELECTED_VERSION"
+          TAG="${SELECTED_VERSION// /_}"
+          TAG_MESSAGE="Version $SELECTED_VERSION"
+          
+          echo "Commit Message: \"$COMMIT_MESSAGE\""
+          echo "Tag: \"$TAG\""
+          echo "Tag Message: \"$TAG_MESSAGE\""
+
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "$COMMIT_MESSAGE"
+          fi
+
+          git tag -fa "$TAG" -m "$TAG_MESSAGE"
+          git push origin "$BRANCH_GENERATED" --tags
+
+      - name: 'Update latest tags'
+        env:
+          GH_TOKEN: ${{ steps.app_token.outputs.token }}
+          SELECTED_VERSION: ${{ needs.version.outputs.selected_version }}
+          LATEST_RELEASE_VERSION: ${{ needs.version.outputs.latest_release_version }}
+          LATEST_SNAPSHOT_VERSION: ${{ needs.version.outputs.latest_snapshot_version }}
+
+        run: |
+          echo "Checking if $SELECTED_VERSION is latest release or snapshot..."
+
+          # Latest release
+          if [ "$SELECTED_VERSION" = "$LATEST_RELEASE_VERSION" ]; then
+            echo "Updating \"latest-release\" tag to point to \"$SELECTED_VERSION\""
+            git tag -f latest-release
+            git push origin refs/tags/latest-release --force
+          fi
+
+          # Latest snapshot
+          if [ "$SELECTED_VERSION" = "$LATEST_SNAPSHOT_VERSION" ]; then
+            echo "Updating \"latest-snapshot\" tag to point to \"$SELECTED_VERSION\""
+            git tag -f latest-snapshot
+            git push origin refs/tags/latest-snapshot --force
+          fi
+
+  generate_badges:
+    name: 'Generate badges'
+    needs: ['version', 'commit_and_tag']
+    runs-on: ubuntu-24.04
+    steps:
+      - name: 'Generate GitHub App token'
+        id: 'app_token'
+        uses: actions/create-github-app-token@v3
+        with:
+          client-id: ${{ secrets.APP_ID }}
+          private-key: ${{ secrets.APP_PRIVATE_KEY }}
+
+      - name: 'Configure GIT'
+        run: |
+          git config --global user.name '${{ steps.app_token.outputs.app-slug }}[bot]'
+          git config --global user.email '${{ secrets.APP_USER_ID }}+${{ steps.app_token.outputs.app-slug }}[bot]@users.noreply.github.com'
+
+      - name: 'Checkout repository'
+        uses: actions/checkout@v7
+        with:
+          token: ${{ steps.app_token.outputs.token }}
+          ref: ${{ env.BRANCH_BADGE }}
+
+      - name: 'Generate Badge (latest release)'
+        id: 'generate_badge_latest_release'
+        uses: loat-dev/action-badge@v1
+        with:
+          icon: 'tag'
+          label-text: 'Latest Release'
+          state-text: ${{ needs.version.outputs.latest_release_version }}
+
+      - name: 'Generate Badge (latest snapshot)'
+        id: 'generate_badge_latest_snapshot'
+        uses: loat-dev/action-badge@v1
+        with:
+          icon: 'tag'
+          label-text: 'Latest Snapshot'
+          state-text: ${{ needs.version.outputs.latest_snapshot_version }}
+          
+      - name: 'Generate Badge (compare)'
+        id: 'generate_badge_compare'
+        uses: loat-dev/action-badge@v1
+        with:
+          icon: 'git-compare'
+          label-text: 'Compare'
+          state-text: '${{ needs.version.outputs.latest_release_version }} ... ${{ needs.version.outputs.latest_snapshot_version }}'
+
+      - name: 'Commit and push badge'
+        env:
+          GH_TOKEN: ${{ steps.app_token.outputs.token }}
+          BADGE_FILE_LATEST_RELEASE: 'latest_release.svg'
+          BADGE_FILE_LATEST_SNAPSHOT: 'latest_snapshot.svg'
+          BADGE_FILE_COMPARE: 'compare.svg'
+
+        run: |
+          echo -e '${{ steps.generate_badge_latest_release.outputs.svg-text }}' > $BADGE_FILE_LATEST_RELEASE
+          echo -e '${{ steps.generate_badge_latest_snapshot.outputs.svg-text }}' > $BADGE_FILE_LATEST_SNAPSHOT
+          echo -e '${{ steps.generate_badge_compare.outputs.svg-text }}' > $BADGE_FILE_COMPARE
+          
+          COMMIT_MESSAGE="Update badges"
+          
+          echo "Commit Message: \"$COMMIT_MESSAGE\""
+
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "$COMMIT_MESSAGE"
+          fi
+
+          git push origin "$BRANCH_BADGE"
