@@ -10,7 +10,14 @@ env:
 on:
   schedule:
     - cron: '30 * * * *' # Runs at 30 minutes past the hour, every day
-
+  
+  workflow_call:
+    inputs:
+      version:
+        type: string
+        description: 'Run with a specific version. Used by "version.yml" to generate multiple versions.'
+        required: true
+  
   workflow_dispatch:
     inputs:
       version:
