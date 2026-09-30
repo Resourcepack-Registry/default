@@ -1,4 +1,4 @@
-name: 'Schedule'
+name: 'Generate'
 description: 'Runs at 30 minutes past the hour, every day, checks if there is a new version and generates new assets.'
 env:
   BRANCH_GENERATED: 'generated'
