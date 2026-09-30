@@ -76,7 +76,7 @@ jobs:
 
     steps:
       - name: 'Generate assets for version "${{ env.SELECTED_VERSION }}" to "${{ env.ASSETS_PATH }}"'
-        uses: MinecraftPlayground/generate-assets@latest
+        uses: MinecraftPlayground/generate-assets@main
         with:
           version: ${{ env.SELECTED_VERSION }}
           path: ${{ env.ASSETS_PATH }}
