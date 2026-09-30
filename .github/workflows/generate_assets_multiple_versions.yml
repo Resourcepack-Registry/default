@@ -58,12 +58,12 @@ jobs:
             export GH_TOKEN="$GH_TOKEN"
             
             echo "Triggering workflow"
-            gh workflow run generate_assets.yml \
+            gh workflow run schedule.yml \
               --repo $REPOSITORY \
               -f version="$version"
             
             sleep 5
-            run_id=$(gh run list --workflow="generate_assets.yml" --json databaseId --jq '.[0].databaseId')
+            run_id=$(gh run list --workflow="schedule.yml" --json databaseId --jq '.[0].databaseId')
             echo "Waiting for run $run_id to complete..."
             
             gh run watch "$run_id" --compact --exit-status > /dev/null 2>&1
