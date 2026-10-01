@@ -29,6 +29,4 @@ jobs:
 
       - name: 'Remove all tags'
         run: |
-          for tag in $(git tag -l); do
-            git push origin ":refs/tags/$tag"
-          done
+          git push origin --delete $(git tag -l)
