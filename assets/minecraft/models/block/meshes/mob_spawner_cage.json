@@ -7,27 +7,33 @@
             "faceData": {
                 "down": {
                     "uv": [ 0, 0, 16, 16 ],
-                    "textureFacing": "down"
+                    "textureFacing": "down",
+                    "cull": false
                 },
                 "up": {
                     "uv": [ 0, 0, 16, 16 ],
-                    "textureFacing": "up"
+                    "textureFacing": "up",
+                    "cull": false
                 },
                 "north": {
                     "uv": [ 0, 0, 16, 16 ],
-                    "textureFacing": "north"
+                    "textureFacing": "north",
+                    "cull": false
                 },
                 "south": {
                     "uv": [ 0, 0, 16, 16 ],
-                    "textureFacing": "south"
+                    "textureFacing": "south",
+                    "cull": false
                 },
                 "west": {
                     "uv": [ 0, 0, 16, 16 ],
-                    "textureFacing": "west"
+                    "textureFacing": "west",
+                    "cull": false
                 },
                 "east": {
                     "uv": [ 0, 0, 16, 16 ],
-                    "textureFacing": "east"
+                    "textureFacing": "east",
+                    "cull": false
                 }
             }
         }
