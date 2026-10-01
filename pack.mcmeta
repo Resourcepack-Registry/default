@@ -6,7 +6,7 @@
             "bidirectional": false
         },
         "af_ZA": {
-            "region": "ZA",
+            "region": "Suid-Afrika",
             "name": "Afrikaans",
             "bidirectional": false
         },
@@ -20,18 +20,23 @@
             "name": "Հայերեն",
             "bidirectional": false
         },
+        "ast_ES": {
+            "region": "Asturies",
+            "name": "Asturianu",
+            "bidirectional": false
+        },
         "eu_ES": {
-            "region": "Euskal herria",
+            "region": "Euskal Herria",
             "name": "Euskara",
             "bidirectional": false
         },
         "bg_BG": {
-            "region": "BG",
+            "region": "България",
             "name": "Български",
             "bidirectional": false
         },
         "ca_ES": {
-            "region": "CAT",
+            "region": "Catalunya",
             "name": "Català",
             "bidirectional": false
         },
@@ -51,17 +56,17 @@
             "bidirectional": false
         },
         "hr_HR": {
-            "region": "HR",
+            "region": "Hrvatska",
             "name": "Hrvatski",
             "bidirectional": false
         },
         "cs_CZ": {
-            "region": "CZ",
+            "region": "Česko",
             "name": "Čeština",
             "bidirectional": false
         },
         "da_DK": {
-            "region": "DK",
+            "region": "Danmark",
             "name": "Dansk",
             "bidirectional": false
         },
@@ -76,7 +81,7 @@
             "bidirectional": false
         },
         "en_CA": {
-            "region": "CA",
+            "region": "Canada",
             "name": "Canadian English",
             "bidirectional": false
         },
@@ -91,18 +96,18 @@
             "bidirectional": false
         },
         "et_EE": {
-            "region": "ET",
+            "region": "Eesti",
             "name": "Eesti",
             "bidirectional": false
         },
         "fil_PH": {
-            "region": "PH",
-            "name": "Tagalog",
+            "region": "Pilipinas",
+            "name": "Filipino",
             "bidirectional": false
         },
         "fi_FI": {
-            "region": "FI",
-            "name": "suomi",
+            "region": "Suomi",
+            "name": "Suomi",
             "bidirectional": false
         },
         "fr_FR": {
@@ -111,7 +116,7 @@
             "bidirectional": false
         },
         "fr_CA": {
-            "region": "CA",
+            "region": "Canada (Québec)",
             "name": "Français",
             "bidirectional": false
         },
@@ -131,12 +136,12 @@
             "bidirectional": false
         },
         "el_GR": {
-            "region": "El",
+            "region": "Ελλάδα",
             "name": "Ελληνικά",
             "bidirectional": false
         },
         "he_IL": {
-            "region": "IL",
+            "region": "ארצות הברית",
             "name": "עברית",
             "bidirectional": true
         },
@@ -146,17 +151,17 @@
             "bidirectional": false
         },
         "hu_HU": {
-            "region": "HU",
+            "region": "Magyarország",
             "name": "Magyar",
             "bidirectional": false
         },
         "is_IS": {
-            "region": "IS",
+            "region": "Ísland",
             "name": "Íslenska",
             "bidirectional": false
         },
         "id_ID": {
-            "region": "ID",
+            "region": "Indonesia",
             "name": "Bahasa Indonesia",
             "bidirectional": false
         },
@@ -181,12 +186,12 @@
             "bidirectional": false
         },
         "ko_KR": {
-            "region": "KR",
+            "region": "한국",
             "name": "한국어",
             "bidirectional": false
         },
         "la_LA": {
-            "region": "Vatican",
+            "region": "Roma Antiquae",
             "name": "Lingua latina",
             "bidirectional": false
         },
@@ -200,19 +205,34 @@
             "name": "Lietuvių",
             "bidirectional": false
         },
+        "nds_DE": {
+            "region": "Düütskland",
+            "name": "Platdüütsk",
+            "bidirectional": false
+        },
         "lb_LU": {
             "region": "Lëtzebuerg",
             "name": "Lëtzebuergesch",
             "bidirectional": false
         },
         "ms_MY": {
-            "region": "MS",
+            "region": "Malaysia",
             "name": "Bahasa Melayu",
             "bidirectional": false
         },
         "mt_MT": {
-            "region": "MT",
+            "region": "Malta",
             "name": "Malti",
+            "bidirectional": false
+        },
+        "gv_IM": {
+            "region": "Mannin",
+            "name": "Gaelg",
+            "bidirectional": false
+        },
+        "mi_NZ": {
+            "region": "Aotearoa",
+            "name": "Te Reo Māori",
             "bidirectional": false
         },
         "no_NO": {
@@ -231,8 +251,8 @@
             "bidirectional": false
         },
         "fa_IR": {
-            "region": "آمریکا",
-            "name": "زبان انگلیسی",
+            "region": "ايران",
+            "name": "فارسی",
             "bidirectional": false
         },
         "en_PT": {
@@ -251,7 +271,7 @@
             "bidirectional": false
         },
         "pt_BR": {
-            "region": "BR",
+            "region": "Brasil",
             "name": "Português",
             "bidirectional": false
         },
@@ -261,7 +281,7 @@
             "bidirectional": false
         },
         "ro_RO": {
-            "region": "RO",
+            "region": "România",
             "name": "Română",
             "bidirectional": false
         },
@@ -276,12 +296,12 @@
             "bidirectional": false
         },
         "sk_SK": {
-            "region": "SK",
-            "name": "Angličtina",
+            "region": "Slovensko",
+            "name": "Slovenčina",
             "bidirectional": false
         },
         "sl_SI": {
-            "region": "SLO",
+            "region": "Slovenija",
             "name": "Slovenščina",
             "bidirectional": false
         },
@@ -316,12 +336,12 @@
             "bidirectional": false
         },
         "th_TH": {
-            "region": "TH",
+            "region": "ประเทศไทย",
             "name": "ภาษาไทย",
             "bidirectional": false
         },
         "tr_TR": {
-            "region": "TR",
+            "region": "Türkiye",
             "name": "Türkçe",
             "bidirectional": false
         },
@@ -330,8 +350,13 @@
             "name": "Українська",
             "bidirectional": false
         },
+        "val_ES": {
+            "region": "País Valencià",
+            "name": "Valencià",
+            "bidirectional": false
+        },
         "vi_VN": {
-            "region": "VN",
+            "region": "Việt Nam",
             "name": "Tiếng Việt",
             "bidirectional": false
         },
