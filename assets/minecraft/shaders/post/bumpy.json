@@ -4,7 +4,7 @@
     ],
     "passes": [
         {
-            "name": "wobble",
+            "name": "bumpy",
             "intarget": "minecraft:main",
             "outtarget": "swap"
         },
