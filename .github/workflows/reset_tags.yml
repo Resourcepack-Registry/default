@@ -29,4 +29,10 @@ jobs:
 
       - name: 'Remove all tags'
         run: |
-          git tag -l | xargs -L 1 git push --delete origin
+          tags=$(git ls-remote --tags --refs origin | awk '{print $2}')
+          
+          if [ -n "$tags" ]; then
+              echo "$tags" | xargs git push origin --delete
+          else
+              echo "No remote tags to delete."
+          fi
