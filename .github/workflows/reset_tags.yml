@@ -29,4 +29,4 @@ jobs:
 
       - name: 'Remove all tags'
         run: |
-          git push origin --delete $(git tag -l)
+          git tag -l | xargs -L 1 git push --delete origin
