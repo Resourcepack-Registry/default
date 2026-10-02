@@ -1,5 +1,5 @@
 # Minecraft Default Assets
-[![Generate Assets](https://github.com/Resourcepack-Registry/default/actions/workflows/generate_assets.yml/badge.svg)](https://github.com/Resourcepack-Registry/default/actions/workflows/generate_assets.yml)
+[![Generate](https://github.com/Resourcepack-Registry/default/actions/workflows/generate.yml/badge.svg)](https://github.com/Resourcepack-Registry/default/actions/workflows/generate.yml)
 [![Latest Release](https://github.com/Resourcepack-Registry/default/blob/badge/latest_release.svg?raw=true)](https://github.com/Resourcepack-Registry/default/tree/latest-release)
 [![Latest Snapshot](https://github.com/Resourcepack-Registry/default/blob/badge/latest_snapshot.svg?raw=true)](https://github.com/Resourcepack-Registry/default/tree/latest-snapshot)
 [![Compare](https://github.com/Resourcepack-Registry/default/blob/badge/compare.svg?raw=true)](https://github.com/Resourcepack-Registry/default/compare/latest-release...latest-snapshot)
