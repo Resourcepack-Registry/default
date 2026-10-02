@@ -13,23 +13,15 @@ mco.backup.nobackups=لا يملك هذا الـ Realm أي نسخة احتيا�
 mco.backup.restoring=استعادة الـ Realm
 mco.brokenworld.download=تحميل
 mco.brokenworld.downloaded=تم التحميل
-mco.brokenworld.message.line1=يرجى مسح البيانات أو تحديد عالم آخر.
-mco.brokenworld.message.line2=يمكنك أيضا تنزيل العالم الخاص بك وتحويله إلى singleplayer.
+mco.brokenworld.message=الرجاء إعادة تعيين أو تحديد عالم آخر.
+يمكنك أيضا تحميل العالم للعب الفردى.
 mco.brokenworld.minigame.title=هذه اللعبة المصغرة لم تعد معتمدة
 mco.brokenworld.play=العب
 mco.brokenworld.reset=إعادة تعيين
 mco.brokenworld.title=العالم الخاص بك لم يعد معتمداً
 mco.buy.realms.buy=أريد واحدة!
 mco.buy.realms.title=شراء Realm
-mco.client.incompatible.msg.line1=العميل الخاص بك قديم وغير متوافق مع ال Realms.
-mco.client.incompatible.msg.line2=الرجاء التحديث إلى أحدث اصدار من Minecraft.
-mco.client.incompatible.msg.line3=ال realms غير متوافقى مع النسخة.
-mco.client.incompatible.title=نسخة غير متوافقة!
-mco.client.outdated.msg.line1=العميل الخاص بك قديم وغير متوافق مع ال Realms.
-mco.client.outdated.msg.line2=الرجاء التحديث إلى أحدث اصدار من Minecraft.
-mco.client.outdated.title=النسخة قديمة!
 mco.configure.current.minigame=الحالي
-mco.configure.world.backup=النسخ الاحتياطية للعالم
 mco.configure.world.buttons.activity=نشاط اللاعب
 mco.configure.world.buttons.close=إغلاق Realm
 mco.configure.world.buttons.delete=حذف
@@ -40,20 +32,13 @@ mco.configure.world.buttons.invite=دعوة لاعب
 mco.configure.world.buttons.moreoptions=المزيد من الخيارات
 mco.configure.world.buttons.op=تعين المدير
 mco.configure.world.buttons.open=فتح Realm
-mco.configure.world.buttons.options=اعدادات العالم
 mco.configure.world.buttons.players=اللاعبين
-mco.configure.world.buttons.resetworld=إعادة ضبط العالم
 mco.configure.world.buttons.settings=إعدادات
 mco.configure.world.buttons.subscription=الاشتراك
 mco.configure.world.buttons.switchminigame=تبديل العبة الصغيرة
 mco.configure.world.close.question.line1=Realm الخاص بك سوف يكون غير متوفر.
 mco.configure.world.close.question.line2=هل أنت متأكد من أنك تريد أن تفعل هذا؟
-mco.configure.world.closing=اقفال realm...
 mco.configure.world.commandBlocks=مكعبات الأوامر
-mco.configure.world.delete.button=حذف نطاق
-mco.configure.world.delete.question.line1=المجال الخاص بك سيتم حذفها بشكل دائم
-mco.configure.world.delete.question.line2=هل انت متأكد من فعل هذا؟
-mco.configure.world.description=وصف Realm
 mco.configure.world.edit.slot.name=اسم العالم
 mco.configure.world.edit.subscreen.adventuremap=بعض الاعدادات تم تعطيلها لان العالم الحالي في خريطة المغامرة
 mco.configure.world.forceGameMode=شدة طريقة اللعب
@@ -65,24 +50,18 @@ mco.configure.world.invites.remove.tooltip=إزالة
 mco.configure.world.leave.question.line1=إن غادرت هذا الـ Realm لن تراه إلا إذا دُعيت مجدداً
 mco.configure.world.leave.question.line2=هل أنت متأكد من أنك تريد القيام بهذا؟
 mco.configure.world.location=الموقع
-mco.configure.world.name=اسم Realm
 mco.configure.world.off=ايقاف
 mco.configure.world.on=تشغيل
-mco.configure.world.opening=فتح realm...
 mco.configure.world.players.error=لا يمكن دعوة الاسم المقدم
 mco.configure.world.players.title=اللاعبين
 mco.configure.world.pvp=لاعب ضد لاعب
 mco.configure.world.reset.question.line1=عالمك سوف يُعاد بناءه وستفقد العالم السابق
 mco.configure.world.reset.question.line2=هل انت متأكد من فعل ذلك ؟
-mco.configure.world.resourcepack.question.line1=ويتطلب هذا المجال حزمة موارد مخصصة.
-mco.configure.world.resourcepack.question.line2=هل تريد تلقائياً تحميل وتثبيت للعب؟
 mco.configure.world.restore.download.question.line1=سوف يتم تنزيل هذا العالم وإضافته إلى قائمة عوالم اللعب الفردي.
 mco.configure.world.restore.download.question.line2=هل تريد الاستمرار؟
 mco.configure.world.restore.question.line1=سوف يُعاد عالمك إلى تاريخ '%s' (%s)
 mco.configure.world.restore.question.line2=هل انت متأكد من فعل ذلك ؟
 mco.configure.world.settings.title=إعدادات
-mco.configure.world.slot=عوالم
-mco.configure.world.slot.empty=فارغ
 mco.configure.world.slot.switch.question.line1=سوف يتم تحويل عالمك الى عالم اخر
 mco.configure.world.slot.switch.question.line2=هل انت متأكد من فعل هذا؟
 mco.configure.world.slot.tooltip=تبديل العالم
@@ -93,34 +72,18 @@ mco.configure.world.spawnMonsters=ظهور الوحوش
 mco.configure.world.spawnNPCs=ظهور شخصيات ثانوية
 mco.configure.world.spawnProtection=حماية التفرخ
 mco.configure.world.status=الحالة
-mco.configure.world.subscription.day=اليوم
-mco.configure.world.subscription.days=أيام
-mco.configure.world.subscription.expired=منتهي
 mco.configure.world.subscription.extend=تمديد الاشتراك
 mco.configure.world.subscription.extendHere=تمديد الاشتراك هنا:
-mco.configure.world.subscription.less_than_a_day=أقل من يوم
-mco.configure.world.subscription.month=في الشهر
-mco.configure.world.subscription.months=أشهر
 mco.configure.world.subscription.recurring.daysleft=تجدد تلقائيا في
 mco.configure.world.subscription.start=تاريخ البدء
-mco.configure.world.subscription.timeleft=الوقت المتبقي
 mco.configure.world.subscription.title=معلومات الاشتراك
-mco.configure.world.switch.slot=إنشاء العالم
-mco.configure.world.switch.slot.subtitle=فارغ هذا العالم، الرجاء اختيار ما يجب فعله
-mco.configure.world.title=تكوين Realm:
 mco.configure.world.uninvite.question=هل أنت متأكد من أنك تريد  إلغاء الدعوة
 mco.configure.worlds.title=عوالم
 mco.connect.authorizing=جارى تسجيل الدخول...
-mco.connect.connecting=الاتصال بعالم...
-mco.connect.failed=فشل في الاتصال إلى عالم
 mco.create.world=إنشاء
-mco.create.world.error=يجب إدخال اسم!
 mco.create.world.location.title=المواقع
 mco.create.world.location.warning=قد لا تحصل على تحديد دقيق للموقع
-mco.create.world.reset.title=إنشاء العالم...
 mco.create.world.seed=بذرة (اختياري)
-mco.create.world.skip=تخطي
-mco.create.world.subtitle=اختيارياً، حدد العالم لتضع على Realm الجديد الخاص بك
 mco.create.world.wait=إنشاء عالم realm...
 mco.download.cancelled=تم إلغاء التنزيل
 mco.download.confirmation.line1=العالم الذي تريد تنزيله اكبر من %s
@@ -131,8 +94,6 @@ mco.download.extracting=استخراج
 mco.download.failed=فشل التنزيل
 mco.download.preparing=إعداد التنزيل
 mco.download.title=تنزيل العالم الأخير
-mco.error.invalid.session.message=الرجاء محاولة إعادة تشغيل Minecraft
-mco.error.invalid.session.title=اسم الجلسة غير صحيح
 mco.errorMessage.6001=النسخة قديمة
 mco.errorMessage.6002=شروط الخدمة لم تُقبل
 mco.errorMessage.6003=تم الوصول إلى الحد الادنى للتنزيل
@@ -142,12 +103,7 @@ mco.errorMessage.connectionFailure=لقد حدث خطأ، يرجى المحاو�
 mco.gui.ok=موافق
 mco.invites.button.accept=قبول
 mco.invites.button.reject=رفض
-mco.invites.nopending=لا يوجد دعوات في الانتظار!
-mco.invites.pending=دعوات جديدة!
-mco.invites.title=دعوات في الانتظار
 mco.minigame.world.changeButton=اختر لعبة أخرى صغيرة
-mco.minigame.world.info.line1=سوف يستبدل عالمك بلعبة صغيرة بشكلٍ مؤقت!
-mco.minigame.world.info.line2=يمكنك العودة إلى عالمك الأصلي دون أن تخسر أي شيء.
 mco.minigame.world.noSelection=يرجى الاختيار
 mco.minigame.world.restore=إنهاء اللعبة الصغيرة...
 mco.minigame.world.restore.question.line1=اللعبة الصغيرة سوف تنتهي و سيتم استعادة الRealm الخاص بك.
@@ -160,13 +116,9 @@ mco.minigame.world.stopButton=انتهاء اللعبة الصغيرة
 mco.minigame.world.switch.new=اختر لعبة صغيرة أخرى؟
 mco.minigame.world.switch.title=تبديل الى لعبة بسيطة
 mco.minigame.world.title=تبديل عالم الـ Realm إلى لعبة صغيرة
-mco.reset.world.adventure=خرائط المغامرة
-mco.reset.world.generate=عالم جديد
 mco.reset.world.resetting.screen.title=إعادة تعيين العالم...
 mco.reset.world.seed=بذرة (اختياري)
-mco.reset.world.template=يولد البقاء على قيد الحياة
 mco.reset.world.title=إعادة تعيين العالم
-mco.reset.world.upload=تحميل العالم
 mco.reset.world.warning=سيؤدي هذا إلى حذف عالم الـ Realm الخاص بك!
 mco.selectServer.buy=شراء Realm!
 mco.selectServer.close=إغلق
@@ -192,37 +144,29 @@ mco.selectServer.note=ملاحظة:
 mco.selectServer.open=Realm مفتوح
 mco.selectServer.openserver=Realm مفتوح
 mco.selectServer.play=العب
-mco.selectServer.popup=Realms هي طريقة سهلة وآمنة للعب عالم Minecraft على الشبكة مع حتى إلى عشرة أصدقاء في نفس الوقت. تدعم الكثير من الألعاب المصغرة والعديد من العوالم الخاصة!
-فقط مالك Realm من يتوجب عليه الدفع.
 mco.selectServer.trial=احصل على فترة تجريبية!
 mco.selectServer.uninitialized=انقر لإنشاء عالم!
+mco.selectServer.updateBreaksAdventure=التحديث القادم سيقوم بكسر هذه الخريطة!
 mco.template.button.select=اختر
 mco.template.default.name=اختر القالب (اختياري)
 mco.template.info.tooltip=موقع الناشر
 mco.template.name=قالب
 mco.template.title=قوالب الـ Realm
 mco.template.title.minigame=Realm ألعاب صغيرة
-mco.template.trailer.tooltip=إعلان عن الخريطة
 mco.terms.buttons.agree=موافق
 mco.terms.buttons.disagree=لا أوافق
 mco.terms.sentence.1=أوافق على Minecraft Realms
 mco.terms.sentence.2=شروط الخدمة
 mco.terms.title=شروط العوالم
-mco.trial.message.line1=هل ترغب في الحصول على الRealm الخاص بك؟
-mco.trial.message.line2=انقر هنا لمزيد من المعلومات!
-mco.trial.title=اخلق عالما
+mco.trial.message=هل ترغب فى الحصول على الـRealm الخاص بك؟
+أضغط هنا للمزيد من المعلومات!
 mco.trial.unavailable=عذراً، الفترة التجريبية غير متوفرة في الوقت الحالى!
 mco.upload.button.name=تحميل
 mco.upload.cancelled=تم إلغاء التحميل
-mco.upload.close.failure=تعذر إغلاق realm الخاص بك,أعد المحاولة لاحقا
 mco.upload.done=تم التحميل
 mco.upload.failed=فشل التحميل! (%s)
 mco.upload.hardcore=لا يمكن تحميل عوالم الصعوبة القصوى!
 mco.upload.preparing=يتم تحضير بيانات عالمك
-mco.upload.select.world.none=لا توجد عوالم singleplayer!
-mco.upload.select.world.subtitle=الرجاء تحديد عالم singleplayer لرفعه
 mco.upload.select.world.title=تحميل العالم
-mco.upload.size.failure.line1='%s' كبير جداً!
-mco.upload.size.failure.line2=حجم الملف %s. الحد الأقصى المسموح به للحجم هو %s.
 mco.upload.uploading=تحميل '%s'
 mco.upload.verifying=التحقق من العالمك

@@ -3723,5 +3723,24 @@
       "ambient/weather/rain4"
     ],
     "subtitle": "subtitles.weather.rain"
+  },
+  "item.reality_vision.use":{
+    "sounds": [
+      "buzzwords/equipvr"
+    ]
+  },
+  "item.ankle_monitor.warning":{
+    "sounds": [
+      "buzzwords/robotlarm1",
+      "buzzwords/robotlarm2",
+      "buzzwords/robotlarm3",
+      "buzzwords/robotlarm4"
+    ]
+  },
+  "item.smarter_watch.notice":{
+    "sounds": [
+      "buzzwords/tick1",
+      "buzzwords/tick2"
+    ]
   }
 }

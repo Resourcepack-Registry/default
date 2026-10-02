@@ -51,6 +51,7 @@ mco.reset.world.warning=Սա մշտապես ջնջել ձեր հարթությո
 mco.selectServer.create=ստեղծել
 mco.selectServer.expires.soon=սպառվում շուտով
 mco.selectServer.leave=լքել
+mco.selectServer.play=swag
 mco.template.button.select=Ընտրել
 mco.template.default.name=Ընտրել Բնորինակ (Լրացուցիչ)
 mco.template.name=Բնորինակ

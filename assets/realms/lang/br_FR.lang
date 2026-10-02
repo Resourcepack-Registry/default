@@ -13,20 +13,20 @@ mco.backup.nobackups=N'eus gwared ebet evit ar Realm-mañ.
 mco.backup.restoring=Oc'h assav ho Realm
 mco.brokenworld.download=Pellgargañ
 mco.brokenworld.downloaded=Pellgarget
-mco.brokenworld.message.line1=Adderaouekait pe dibabit ur bed all.
-mco.brokenworld.message.line2=Gallout a rit ivez dibab pellgargañ ar bed evel unan "Ur c'hoarier".
+mco.brokenworld.message=Adderaouekait anezhañ pe dibabit ur bed all.
+Gallout a rit ivez dibab pellgargañ ar bed evel unan "Ur c'hoarier".
 mco.brokenworld.minigame.title=N'eo ket skoret ar c'hoariig-mañ ken
 mco.brokenworld.play=C'hoari
 mco.brokenworld.reset=Adderaouekaat
 mco.brokenworld.title=N'eo ket skoret ken ho ped bremanel
 mco.buy.realms.buy=C'hoant 'm eus unan !
 mco.buy.realms.title=Prenañ ur Realm
-mco.client.incompatible.msg.line1=N'eo ket keverlec'h hoc'h arval gant Realms.
-mco.client.incompatible.msg.line2=Implijit handelv diwezhañ Minecraft.
-mco.client.incompatible.msg.line3=N'eo ket keverlec'h Realms gant an handelvoù skeudenn.
+mco.client.incompatible.msg=N'eo ket keverlec'h hoc'h arval gant Realms.
+Arverit handelv nevesañ Minecraft mar plij.
+N'eo ket keverlec'h Realms gant handelvoù skeudenn.
 mco.client.incompatible.title=Arval digeverlec'h!
-mco.client.outdated.msg.line1=Diamzeret eo hoc'h arval ha n'eo ket keverlec'h gant Realms.
-mco.client.outdated.msg.line2=Hizivait da handelv diwezhañ Minecraft.
+mco.client.outdated.msg=Diamzeret eo hoc'h arval ha n'eo ket keverlec'h gant Realms.
+Hizivait anezhañ d'an handelv Minecraft nevesañ mar plij.
 mco.client.outdated.title=Diamzeret eo hoc'h arval!
 mco.configure.current.minigame=Bremanel
 mco.configure.world.backup=Gwaredoù bed
@@ -131,8 +131,6 @@ mco.download.extracting=Oc'h eztennañ
 mco.download.failed=Pellgargadur c'hwitet
 mco.download.preparing=O prientiñ ar pellgargadur
 mco.download.title=O pellgargañ ar bed diwezhañ
-mco.error.invalid.session.message=Klaskit adloc'hañ Minecraft
-mco.error.invalid.session.title=Naoudi estez direizh
 mco.errorMessage.6001=Diamzeret eo an arval
 mco.errorMessage.6002=N'eo ket bet asantet an divizoù arver
 mco.errorMessage.6003=Tizhet eo bet ar vevenn bellgargañ
@@ -146,8 +144,8 @@ mco.invites.nopending=Pedadenn ebet o c'hortoz!
 mco.invites.pending=Pedadennoù nevez!
 mco.invites.title=Pedadennoù o c'hortoz
 mco.minigame.world.changeButton=Diuzit ur c'hoariig all
-mco.minigame.world.info.line1=Erlec'hiet e vo ho ped gant ur c'hoariig e-pad ur mare!
-mco.minigame.world.info.line2=Gallout a reoc'h distreiñ d'ho ped orin diwezhatoc'h hep koll netra.
+mco.minigame.world.info=Erlec'hiañ a raio ho ped gant ur c'hoariig e-pad ur pennad!
+Gallout a rit distreiñ d'ho ped orin hep koll netra.
 mco.minigame.world.noSelection=Diuzit unan
 mco.minigame.world.restore=O paouez ar c'hoariig...
 mco.minigame.world.restore.question.line1=Paouezet e vo gant ho c'hoariig hag assavet e vo ho Realm.
@@ -166,6 +164,8 @@ mco.reset.world.resetting.screen.title=Oc'h adderaouekaat ar bed...
 mco.reset.world.seed=Greunenn (diret)
 mco.reset.world.template=Kartennoù dreistbevañ
 mco.reset.world.title=Adderaouekaat ar bed
+mco.reset.world.updateBreaksAdventure=A-raok mont da gantreal, taolit evezh:
+Hizivadenn o tont Minecraft a c'hallo terriñ kartennoù 'zo!
 mco.reset.world.upload=Uskargañ ur bed
 mco.reset.world.warning=Dilemel a raio ho ped Realm bremanel!
 mco.selectServer.buy=Prenañ ur Realm!
@@ -195,6 +195,7 @@ mco.selectServer.play=C'hoari
 mco.selectServer.popup=Un doare sur ha simpl da c'hoari da vMinecraft enlinenn eo Realm, gant dek mignon er memes mare d'ar muiañ. Un toullad a c'hoariigoù hag a vedoù personelaet a zo skoret! N'eus nemet perc'henn ar Realm a rank paeañ.
 mco.selectServer.trial=Amprouiñ!
 mco.selectServer.uninitialized=Klikit evit krouiñ ar Realm !
+mco.selectServer.updateBreaksAdventure=Torret e vo ar ar gartenn gant an hizivadenn o tont!
 mco.template.button.select=Diuzañ
 mco.template.default.name=Patrom bed
 mco.template.info.tooltip=Lec'hienn web an embanner
@@ -207,8 +208,8 @@ mco.terms.buttons.disagree=Na asantiñ
 mco.terms.sentence.1=Asantiñ a ran
 mco.terms.sentence.2=Divizoù arver Minecraft Realms
 mco.terms.title=Divizoù arver Realms
-mco.trial.message.line1=C'hoant ho peus da gaout ho Realm deoc'h?
-mco.trial.message.line2=Klikit amañ evit kaout titouroù ouzhpenn!
+mco.trial.message=Fell a ra deoc'h kaout ho Realm deoc'h?
+ Klikit amañ evit gouzout hiroc'h!
 mco.trial.title=Krouiñ ur Realm
 mco.trial.unavailable=Digarezit, n'haller ket kinnig amprouadennoù evit ar mare!
 mco.upload.button.name=Uskargañ
@@ -221,7 +222,7 @@ mco.upload.preparing=O prientiñ roadennoù ho ped
 mco.upload.select.world.none=N'eo bet kavet bed "Ur c'hoarier" ebet!
 mco.upload.select.world.subtitle=Dibabit ur bed "Ur c'hoarier" da uskargañ
 mco.upload.select.world.title=Uskargañ ar bed
-mco.upload.size.failure.line1=Re vras eo '%s'!
-mco.upload.size.failure.line2=%s eo. %s eo ar ment brasañ aotreet.
+mco.upload.size.failure=Re vras eo '%s'!
+%s eo. %s eo ar ment brasañ aotreet.
 mco.upload.uploading=Oc'h uskargañ '%s'
 mco.upload.verifying=O gwiriekaat ho ped
