@@ -223,5 +223,5 @@ mco.upload.select.world.subtitle=Por favor, selecciona un mundo de un jugador pa
 mco.upload.select.world.title=Subir mundo
 mco.upload.size.failure.line1=¡"%s" es demasiado grande!
 mco.upload.size.failure.line2=Ocupa %s. El tamaño máximo permitido es de %s.
-mco.upload.uploading=Subiendo '%s'
+mco.upload.uploading=Subiendo "%s"
 mco.upload.verifying=Verificando tu mundo

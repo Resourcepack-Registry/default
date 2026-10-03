@@ -96,8 +96,8 @@
             "bidirectional": false
         },
         "en_UD": {
-            "region": "ʞ∩",
-            "name": "ɥsᴉꞁƃuƎ",
+            "region": "ɯopᵷuᴉʞ pǝʇᴉu∩",
+            "name": "ɥsᴉꞁᵷuƎ",
             "bidirectional": false
         },
         "en_AU": {
@@ -116,7 +116,7 @@
             "bidirectional": false
         },
         "en_GB": {
-            "region": "UK",
+            "region": "United Kingdom",
             "name": "English",
             "bidirectional": false
         },
@@ -175,9 +175,19 @@
             "name": "Deutsch",
             "bidirectional": false
         },
+        "de_AT": {
+            "region": "Östareich",
+            "name": "Deitsch",
+            "bidirectional": false
+        },
         "el_GR": {
             "region": "Ελλάδα",
             "name": "Ελληνικά",
+            "bidirectional": false
+        },
+        "haw_US": {
+            "region": "Hawaiʻi",
+            "name": "ʻŌlelo Hawaiʻi",
             "bidirectional": false
         },
         "he_IL": {
@@ -187,7 +197,7 @@
         },
         "hi_IN": {
             "region": "भारत",
-            "name": "अंग्रेज़ी",
+            "name": "हिन्दी",
             "bidirectional": false
         },
         "hu_HU": {
@@ -221,7 +231,7 @@
             "bidirectional": false
         },
         "tlh_AA": {
-            "region": "tlhIngan wo'",
+            "region": "Qo’noS",
             "name": "tlhIngan Hol",
             "bidirectional": false
         },
@@ -293,6 +303,11 @@
         "mi_NZ": {
             "region": "Aotearoa",
             "name": "Te Reo Māori",
+            "bidirectional": false
+        },
+        "mn_MN": {
+            "region": "Монгол Улс",
+            "name": "Монгол",
             "bidirectional": false
         },
         "se_NO": {
@@ -371,7 +386,7 @@
             "bidirectional": false
         },
         "sk_SK": {
-            "region": "Slovakia",
+            "region": "Slovensko",
             "name": "Slovenčina",
             "bidirectional": false
         },
@@ -410,6 +425,11 @@
             "name": "Español",
             "bidirectional": false
         },
+        "swg_de": {
+            "region": "Allgai",
+            "name": "Ostallgaierisch",
+            "bidirectional": false
+        },
         "sv_SE": {
             "region": "Sverige",
             "name": "Svenska",
@@ -436,7 +456,7 @@
             "bidirectional": false
         },
         "val_ES": {
-            "region": "País Valencià",
+            "region": "Comunitat Valenciana",
             "name": "Català (Valencià)",
             "bidirectional": false
         },
