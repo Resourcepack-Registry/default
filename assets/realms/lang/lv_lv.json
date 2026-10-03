@@ -1,5 +1,6 @@
 {
     "mco.account.privacy.info": "Las\u012bt vair\u0101k par Mojang un priv\u0101tuma noteikumiem",
+    "mco.account.privacyinfo": "Mojang uzst\u0101da noteiktas proced\u016bras lai pal\u012bdz\u0113tu aizsarg\u0101t b\u0113rnus un vi\u0146u priv\u0101tumu ieskaitot pak\u013cau\u0161anos ar B\u0113rnu Tie\u0161saistes Priv\u0101tuma Aizsardz\u012bbas Aktu (COPPA) un Visp\u0101r\u012bg\u0101s Datu Aizsardz\u012bbas Regulu. (VDAR)\n\nPirms piek\u013c\u016bt savam Realms kontam, jums var b\u016bt nepiecie\u0161ams ieg\u016bt vec\u0101ku piekri\u0161anu.\n\nJa jums ir vec\u0101ks Minecraft konts (j\u016bs piesl\u0113dzaties ar j\u016bsu lietot\u0101jv\u0101rdu), jums j\u0101p\u0101rce\u013c konts uz Mojang konta lai piek\u013c\u016btu Realms.",
     "mco.account.update": "Atjaunin\u0101t kontu",
     "mco.activity.noactivity": "Nav aktivit\u0101te p\u0113d\u0113j\u0101s %s dien\u0101s",
     "mco.activity.title": "Sp\u0113l\u0113t\u0101ja aktivit\u0101te",
@@ -58,7 +59,7 @@
     "mco.configure.world.edit.subscreen.experience": "Da\u017ei iestat\u012bjumi ir nepieejami, jo \u0161\u012b pasaule ir pieredze",
     "mco.configure.world.edit.subscreen.inspiration": "Da\u017ei iestat\u012bjumi ir atsp\u0113joti, jo j\u016bsu pasaule ir iedvesma",
     "mco.configure.world.forceGameMode": "Piespiest Sp\u0113les re\u017e\u012bjumu",
-    "mco.configure.world.invite.profile.name": "Nosaukums",
+    "mco.configure.world.invite.profile.name": "V\u0101rds",
     "mco.configure.world.invited": "Uzaicin\u0101ts",
     "mco.configure.world.invites.normal.tooltip": "Parasts lietot\u0101js",
     "mco.configure.world.invites.ops.tooltip": "Oper\u0101tors",

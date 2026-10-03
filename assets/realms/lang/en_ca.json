@@ -1,5 +1,6 @@
 {
     "mco.account.privacy.info": "Read more about Mojang and privacy laws",
+    "mco.account.privacyinfo": "Mojang implements certain procedures to help protect children and their privacy including complying with the Children\u2019s Online Privacy Protection Act (COPPA) and General Data Protection Regulation (GDPR).\n\nYou may need to obtain parental consent before accessing your Realms account.\n\nIf you have an older Minecraft account (you log in with your username), you need to migrate the account to a Mojang account in order to access Realms.",
     "mco.account.update": "Update Account",
     "mco.activity.noactivity": "No activity for the past %s days",
     "mco.activity.title": "Player activity",
@@ -193,7 +194,7 @@
     "mco.selectServer.open": "Open realm",
     "mco.selectServer.openserver": "Open realm",
     "mco.selectServer.play": "Play",
-    "mco.selectServer.popup": "Realms is a safe, simple way to enjoy an online Minecraft world with up to ten friends at a time.   It supports loads of minigames and plenty of custom worlds! Only the owner of the Realm needs to pay.",
+    "mco.selectServer.popup": "Realms is a safe, simple way to enjoy an online Minecraft world with up to ten friends at a time.   It supports loads of minigames and plenty of custom worlds! Only the owner of the realm needs to pay.",
     "mco.selectServer.trial": "Get a trial!",
     "mco.selectServer.uninitialized": "Click to start your new realm!",
     "mco.template.button.select": "Select",

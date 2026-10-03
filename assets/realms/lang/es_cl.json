@@ -1,5 +1,6 @@
 {
     "mco.account.privacy.info": "Leer m\u00e1s sobre Mojang y leyes de privacidad",
+    "mco.account.privacyinfo": "Mojang implementa ciertos procedimientos para ayudar a proteger a los menores y su privacidad que consisten en cumplir con la Ley de Protecci\u00f3n de Privacidad Infantil en Internet (COPPA) y el Reglamento General de Protecci\u00f3n de Datos (RGPD).\n\nDebes tener consentimiento parental antes de poder tener acceso a tu cuenta de Realms.\n\nSi tienes una cuenta de Minecraft antigua (inicias sesi\u00f3n con tu nombre de usuario), necesitar\u00e1s migrar tu cuenta a una de Mojang para poder acceder a Realms.",
     "mco.account.update": "Actualizar cuenta",
     "mco.activity.noactivity": "Sin actividad desde hace '%s' d\u00edas",
     "mco.activity.title": "Actividad de jugadores",
