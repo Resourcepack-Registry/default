@@ -1,6 +1,6 @@
 {
   "type": "crafting_shaped",
-  "group": "stained_hardened_clay",
+  "group": "stained_terracotta",
   "pattern": [
     "###",
     "#X#",
@@ -8,7 +8,7 @@
   ],
   "key": {
     "#": {
-      "item": "minecraft:hardened_clay"
+      "item": "minecraft:terracotta"
     },
     "X": {
       "item": "minecraft:lapis_lazuli"

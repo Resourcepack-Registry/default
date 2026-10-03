@@ -1,6 +1,6 @@
 {
   "type": "crafting_shaped",
-  "group": "stained_hardened_clay",
+  "group": "stained_terracotta",
   "pattern": [
     "###",
     "#X#",
@@ -8,14 +8,14 @@
   ],
   "key": {
     "#": {
-      "item": "minecraft:hardened_clay"
+      "item": "minecraft:terracotta"
     },
     "X": {
-      "item": "minecraft:gray_dye"
+      "item": "minecraft:cocoa_beans"
     }
   },
   "result": {
-    "item": "minecraft:gray_terracotta",
+    "item": "minecraft:brown_terracotta",
     "count": 8
   }
 }
