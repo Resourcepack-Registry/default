@@ -13,13 +13,9 @@ in vec2 texCoord0;
 out vec4 fragColor;
 
 void main() {
-    vec4 color = texture(Sampler0, texCoord0);
-#ifdef ALPHA_CUTOUT
-    if (color.a < ALPHA_CUTOUT) {
+    vec4 color = texture(Sampler0, texCoord0).rrrr * vertexColor * ColorModulator;
+    if (color.a < 0.1) {
         discard;
     }
-#endif
-
-    color *= vertexColor * ColorModulator;
     fragColor = apply_fog(color, sphericalVertexDistance, cylindricalVertexDistance, FogEnvironmentalStart, FogEnvironmentalEnd, FogRenderDistanceStart, FogRenderDistanceEnd, FogColor);
 }

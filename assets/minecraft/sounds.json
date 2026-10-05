@@ -3608,66 +3608,6 @@
     ],
     "subtitle": "subtitles.block.chorus_flower.grow"
   },
-  "block.cinnabar.break": {
-    "sounds": [
-      "block/cinnabar/break1",
-      "block/cinnabar/break2",
-      "block/cinnabar/break3",
-      "block/cinnabar/break4",
-      "block/cinnabar/break5",
-      "block/cinnabar/break6",
-      "block/cinnabar/break7"
-    ],
-    "subtitle": "subtitles.block.generic.break"
-  },
-  "block.cinnabar.fall": {
-    "sounds": [
-      "block/cinnabar/hit1",
-      "block/cinnabar/hit2",
-      "block/cinnabar/hit3",
-      "block/cinnabar/hit4",
-      "block/cinnabar/hit5",
-      "block/cinnabar/hit6",
-      "block/cinnabar/hit7"
-    ],
-    "subtitle": "subtitles.block.generic.fall"
-  },
-  "block.cinnabar.hit": {
-    "sounds": [
-      "block/cinnabar/hit1",
-      "block/cinnabar/hit2",
-      "block/cinnabar/hit3",
-      "block/cinnabar/hit4",
-      "block/cinnabar/hit5",
-      "block/cinnabar/hit6",
-      "block/cinnabar/hit7"
-    ],
-    "subtitle": "subtitles.block.generic.hit"
-  },
-  "block.cinnabar.place": {
-    "sounds": [
-      "block/cinnabar/place1",
-      "block/cinnabar/place2",
-      "block/cinnabar/place3",
-      "block/cinnabar/place4",
-      "block/cinnabar/place5",
-      "block/cinnabar/place6",
-      "block/cinnabar/place7"
-    ],
-    "subtitle": "subtitles.block.generic.place"
-  },
-  "block.cinnabar.step": {
-    "sounds": [
-      "block/cinnabar/step1",
-      "block/cinnabar/step2",
-      "block/cinnabar/step3",
-      "block/cinnabar/step4",
-      "block/cinnabar/step5",
-      "block/cinnabar/step6",
-      "block/cinnabar/step7"
-    ],
-    "subtitle": "subtitles.block.generic.footsteps"
-  },
   "block.cobweb.break": {
     "sounds": [
       "block/cobweb/break1",
@@ -9120,178 +9060,6 @@
     ],
     "subtitle": "subtitles.block.portal.trigger"
   },
-  "block.potent_sulfur.break": {
-    "sounds": [
-      "block/potent_sulfur/break1",
-      "block/potent_sulfur/break2",
-      "block/potent_sulfur/break3",
-      "block/potent_sulfur/break4",
-      "block/potent_sulfur/break5",
-      "block/potent_sulfur/break6",
-      "block/potent_sulfur/break7"
-    ],
-    "subtitle": "subtitles.block.generic.break"
-  },
-  "block.potent_sulfur.fall": {
-    "sounds": [
-      "block/potent_sulfur/hit1",
-      "block/potent_sulfur/hit2",
-      "block/potent_sulfur/hit3",
-      "block/potent_sulfur/hit4",
-      "block/potent_sulfur/hit5",
-      "block/potent_sulfur/hit6",
-      "block/potent_sulfur/hit7"
-    ],
-    "subtitle": "subtitles.block.generic.fall"
-  },
-  "block.potent_sulfur.geyser_continuous_eruption": {
-    "sounds": [
-      "block/potent_sulfur/geyser_continuous/eruption1",
-      "block/potent_sulfur/geyser_continuous/eruption2",
-      "block/potent_sulfur/geyser_continuous/eruption3",
-      "block/potent_sulfur/geyser_continuous/eruption4",
-      "block/potent_sulfur/geyser_continuous/eruption5",
-      "block/potent_sulfur/geyser_continuous/eruption6"
-    ],
-    "subtitle": "subtitles.block.potent_sulfur.geyser_eruption"
-  },
-  "block.potent_sulfur.geyser_continuous_eruption_active": {
-    "sounds": [
-      {
-        "name": "block/potent_sulfur/geyser_continuous/eruption_active1",
-        "volume": 2.0
-      },
-      {
-        "name": "block/potent_sulfur/geyser_continuous/eruption_active2",
-        "volume": 2.0
-      },
-      {
-        "name": "block/potent_sulfur/geyser_continuous/eruption_active3",
-        "volume": 2.0
-      },
-      {
-        "name": "block/potent_sulfur/geyser_continuous/eruption_active4",
-        "volume": 2.0
-      },
-      {
-        "name": "block/potent_sulfur/geyser_continuous/eruption_active5",
-        "volume": 2.0
-      },
-      {
-        "name": "block/potent_sulfur/geyser_continuous/eruption_active6",
-        "volume": 2.0
-      },
-      {
-        "name": "block/potent_sulfur/geyser_continuous/eruption_active7",
-        "volume": 2.0
-      }
-    ]
-  },
-  "block.potent_sulfur.geyser_eruption": {
-    "sounds": [
-      "block/potent_sulfur/sulfur_spring/eruption1",
-      "block/potent_sulfur/sulfur_spring/eruption2",
-      "block/potent_sulfur/sulfur_spring/eruption3",
-      "block/potent_sulfur/sulfur_spring/eruption4",
-      "block/potent_sulfur/sulfur_spring/eruption5",
-      "block/potent_sulfur/sulfur_spring/eruption6",
-      "block/potent_sulfur/sulfur_spring/eruption7",
-      "block/potent_sulfur/sulfur_spring/eruption8"
-    ],
-    "subtitle": "subtitles.block.potent_sulfur.geyser_eruption"
-  },
-  "block.potent_sulfur.geyser_eruption_active": {
-    "sounds": [
-      {
-        "name": "block/potent_sulfur/sulfur_spring/eruption_active1",
-        "volume": 2.0
-      },
-      {
-        "name": "block/potent_sulfur/sulfur_spring/eruption_active2",
-        "volume": 2.0
-      },
-      {
-        "name": "block/potent_sulfur/sulfur_spring/eruption_active3",
-        "volume": 2.0
-      },
-      {
-        "name": "block/potent_sulfur/sulfur_spring/eruption_active4",
-        "volume": 2.0
-      },
-      {
-        "name": "block/potent_sulfur/sulfur_spring/eruption_active5",
-        "volume": 2.0
-      },
-      {
-        "name": "block/potent_sulfur/sulfur_spring/eruption_active6",
-        "volume": 2.0
-      },
-      {
-        "name": "block/potent_sulfur/sulfur_spring/eruption_active7",
-        "volume": 2.0
-      },
-      {
-        "name": "block/potent_sulfur/sulfur_spring/eruption_active8",
-        "volume": 2.0
-      }
-    ]
-  },
-  "block.potent_sulfur.hit": {
-    "sounds": [
-      "block/potent_sulfur/hit1",
-      "block/potent_sulfur/hit2",
-      "block/potent_sulfur/hit3",
-      "block/potent_sulfur/hit4",
-      "block/potent_sulfur/hit5",
-      "block/potent_sulfur/hit6",
-      "block/potent_sulfur/hit7"
-    ],
-    "subtitle": "subtitles.block.generic.hit"
-  },
-  "block.potent_sulfur.noxious_gas": {
-    "sounds": [
-      "block/potent_sulfur/noxious_gas/ambient1",
-      "block/potent_sulfur/noxious_gas/ambient2",
-      "block/potent_sulfur/noxious_gas/ambient3",
-      "block/potent_sulfur/noxious_gas/ambient4",
-      "block/potent_sulfur/noxious_gas/ambient5",
-      "block/potent_sulfur/noxious_gas/ambient6",
-      "block/potent_sulfur/noxious_gas/ambient7",
-      "block/potent_sulfur/noxious_gas/ambient8",
-      "block/potent_sulfur/noxious_gas/ambient9",
-      "block/potent_sulfur/noxious_gas/ambient10",
-      "block/potent_sulfur/noxious_gas/ambient11",
-      "block/potent_sulfur/noxious_gas/ambient12",
-      "block/potent_sulfur/noxious_gas/ambient13",
-      "block/potent_sulfur/noxious_gas/ambient14"
-    ],
-    "subtitle": "subtitles.block.potent_sulfur.noxious_gas"
-  },
-  "block.potent_sulfur.place": {
-    "sounds": [
-      "block/potent_sulfur/place1",
-      "block/potent_sulfur/place2",
-      "block/potent_sulfur/place3",
-      "block/potent_sulfur/place4",
-      "block/potent_sulfur/place5",
-      "block/potent_sulfur/place6",
-      "block/potent_sulfur/place7",
-      "block/potent_sulfur/place8"
-    ],
-    "subtitle": "subtitles.block.generic.place"
-  },
-  "block.potent_sulfur.step": {
-    "sounds": [
-      "block/potent_sulfur/step1",
-      "block/potent_sulfur/step2",
-      "block/potent_sulfur/step3",
-      "block/potent_sulfur/step4",
-      "block/potent_sulfur/step5",
-      "block/potent_sulfur/step6",
-      "block/potent_sulfur/step7"
-    ],
-    "subtitle": "subtitles.block.generic.footsteps"
-  },
   "block.powder_snow.break": {
     "sounds": [
       "block/powder_snow/break1",
@@ -11584,140 +11352,6 @@
       }
     ],
     "subtitle": "subtitles.block.pressure_plate.click"
-  },
-  "block.sulfur.break": {
-    "sounds": [
-      "block/sulfur/break1",
-      "block/sulfur/break2",
-      "block/sulfur/break3",
-      "block/sulfur/break4",
-      "block/sulfur/break5",
-      "block/sulfur/break6",
-      "block/sulfur/break7"
-    ],
-    "subtitle": "subtitles.block.generic.break"
-  },
-  "block.sulfur.fall": {
-    "sounds": [
-      "block/sulfur/hit1",
-      "block/sulfur/hit2",
-      "block/sulfur/hit3",
-      "block/sulfur/hit4",
-      "block/sulfur/hit5",
-      "block/sulfur/hit6",
-      "block/sulfur/hit7"
-    ],
-    "subtitle": "subtitles.block.generic.fall"
-  },
-  "block.sulfur.hit": {
-    "sounds": [
-      "block/sulfur/hit1",
-      "block/sulfur/hit2",
-      "block/sulfur/hit3",
-      "block/sulfur/hit4",
-      "block/sulfur/hit5",
-      "block/sulfur/hit6",
-      "block/sulfur/hit7"
-    ],
-    "subtitle": "subtitles.block.generic.hit"
-  },
-  "block.sulfur.place": {
-    "sounds": [
-      "block/sulfur/place1",
-      "block/sulfur/place2",
-      "block/sulfur/place3",
-      "block/sulfur/place4",
-      "block/sulfur/place5",
-      "block/sulfur/place6",
-      "block/sulfur/place7",
-      "block/sulfur/place8"
-    ],
-    "subtitle": "subtitles.block.generic.place"
-  },
-  "block.sulfur.step": {
-    "sounds": [
-      "block/sulfur/step1",
-      "block/sulfur/step2",
-      "block/sulfur/step3",
-      "block/sulfur/step4",
-      "block/sulfur/step5",
-      "block/sulfur/step6",
-      "block/sulfur/step7"
-    ],
-    "subtitle": "subtitles.block.generic.footsteps"
-  },
-  "block.sulfur_spike.break": {
-    "sounds": [
-      "block/sulfur/break1",
-      "block/sulfur/break2",
-      "block/sulfur/break3",
-      "block/sulfur/break4",
-      "block/sulfur/break5",
-      "block/sulfur/break6",
-      "block/sulfur/break7"
-    ],
-    "subtitle": "subtitles.block.generic.break"
-  },
-  "block.sulfur_spike.fall": {
-    "sounds": [
-      "block/sulfur/hit1",
-      "block/sulfur/hit2",
-      "block/sulfur/hit3",
-      "block/sulfur/hit4",
-      "block/sulfur/hit5",
-      "block/sulfur/hit6",
-      "block/sulfur/hit7"
-    ],
-    "subtitle": "subtitles.block.generic.fall"
-  },
-  "block.sulfur_spike.hit": {
-    "sounds": [
-      "block/sulfur/hit1",
-      "block/sulfur/hit2",
-      "block/sulfur/hit3",
-      "block/sulfur/hit4",
-      "block/sulfur/hit5",
-      "block/sulfur/hit6",
-      "block/sulfur/hit7"
-    ],
-    "subtitle": "subtitles.block.generic.hit"
-  },
-  "block.sulfur_spike.land": {
-    "sounds": [
-      "block/sulfur_spike/land1",
-      "block/sulfur_spike/land2",
-      "block/sulfur_spike/land3",
-      "block/sulfur_spike/land4",
-      "block/sulfur_spike/land5",
-      "block/sulfur_spike/land6",
-      "block/sulfur_spike/land7"
-    ],
-    "subtitle": "subtitles.block.generic.break"
-  },
-  "block.sulfur_spike.place": {
-    "sounds": [
-      "block/sulfur/place1",
-      "block/sulfur/place2",
-      "block/sulfur/place3",
-      "block/sulfur/place4",
-      "block/sulfur/place5",
-      "block/sulfur/place6",
-      "block/sulfur/place7",
-      "block/sulfur/place8"
-    ],
-    "subtitle": "subtitles.block.generic.place"
-  },
-  "block.sulfur_spike.step": {
-    "sounds": [
-      "block/sulfur/step1",
-      "block/sulfur/step2",
-      "block/sulfur/step3",
-      "block/sulfur/step4",
-      "block/sulfur/step5",
-      "block/sulfur/step6",
-      "block/sulfur/step7"
-    ],
-    "subtitle": "subtitles.block.generic.footsteps"
   },
   "block.suspicious_gravel.break": {
     "sounds": [
@@ -20819,52 +20453,6 @@
     ],
     "subtitle": "subtitles.entity.slime.squish"
   },
-  "entity.small_sulfur_cube.death": {
-    "sounds": [
-      "mob/sulfur_cube/small_sulfur_cube/death"
-    ],
-    "subtitle": "subtitles.entity.sulfur_cube.death"
-  },
-  "entity.small_sulfur_cube.hurt": {
-    "sounds": [
-      "mob/sulfur_cube/small_sulfur_cube/hit1",
-      "mob/sulfur_cube/small_sulfur_cube/hit2",
-      "mob/sulfur_cube/small_sulfur_cube/hit3",
-      "mob/sulfur_cube/small_sulfur_cube/hit4"
-    ],
-    "subtitle": "subtitles.entity.sulfur_cube.hurt"
-  },
-  "entity.small_sulfur_cube.jump": {
-    "sounds": [
-      "mob/sulfur_cube/small_sulfur_cube/jump1",
-      "mob/sulfur_cube/small_sulfur_cube/jump2",
-      "mob/sulfur_cube/small_sulfur_cube/jump3",
-      "mob/sulfur_cube/small_sulfur_cube/jump4",
-      "mob/sulfur_cube/small_sulfur_cube/jump5",
-      "mob/sulfur_cube/small_sulfur_cube/jump6",
-      "mob/sulfur_cube/small_sulfur_cube/jump7",
-      "mob/sulfur_cube/small_sulfur_cube/jump8",
-      "mob/sulfur_cube/small_sulfur_cube/jump9",
-      "mob/sulfur_cube/small_sulfur_cube/jump10",
-      "mob/sulfur_cube/small_sulfur_cube/jump11"
-    ],
-    "subtitle": "subtitles.entity.sulfur_cube.squish"
-  },
-  "entity.small_sulfur_cube.squish": {
-    "sounds": [
-      "mob/sulfur_cube/small_sulfur_cube/squish1",
-      "mob/sulfur_cube/small_sulfur_cube/squish2",
-      "mob/sulfur_cube/small_sulfur_cube/squish3",
-      "mob/sulfur_cube/small_sulfur_cube/squish4",
-      "mob/sulfur_cube/small_sulfur_cube/squish5",
-      "mob/sulfur_cube/small_sulfur_cube/squish6",
-      "mob/sulfur_cube/small_sulfur_cube/squish7",
-      "mob/sulfur_cube/small_sulfur_cube/squish8",
-      "mob/sulfur_cube/small_sulfur_cube/squish9",
-      "mob/sulfur_cube/small_sulfur_cube/squish10"
-    ],
-    "subtitle": "subtitles.entity.sulfur_cube.squish"
-  },
   "entity.sniffer.death": {
     "sounds": [
       "mob/sniffer/death1",
@@ -21305,101 +20893,6 @@
       }
     ],
     "subtitle": "subtitles.block.generic.footsteps"
-  },
-  "entity.sulfur_cube.absorb": {
-    "sounds": [
-      "mob/sulfur_cube/absorb1",
-      {
-        "name": "mob/sulfur_cube/absorb2",
-        "weight": 2
-      }
-    ],
-    "subtitle": "subtitles.entity.sulfur_cube.absorb"
-  },
-  "entity.sulfur_cube.bounce": {
-    "sounds": [
-      "mob/sulfur_cube/ball/bounce1",
-      "mob/sulfur_cube/ball/bounce2",
-      "mob/sulfur_cube/ball/bounce3",
-      "mob/sulfur_cube/ball/bounce4",
-      "mob/sulfur_cube/ball/bounce5",
-      "mob/sulfur_cube/ball/bounce6",
-      "mob/sulfur_cube/ball/bounce7",
-      "mob/sulfur_cube/ball/bounce8"
-    ],
-    "subtitle": "subtitles.entity.sulfur_cube.bounce"
-  },
-  "entity.sulfur_cube.death": {
-    "sounds": [
-      "mob/sulfur_cube/death"
-    ],
-    "subtitle": "subtitles.entity.sulfur_cube.death"
-  },
-  "entity.sulfur_cube.eject": {
-    "sounds": [
-      "mob/sulfur_cube/eject1",
-      "mob/sulfur_cube/eject2"
-    ],
-    "subtitle": "subtitles.entity.sulfur_cube.eject"
-  },
-  "entity.sulfur_cube.hit": {
-    "sounds": [
-      "mob/sulfur_cube/ball/hit1",
-      "mob/sulfur_cube/ball/hit2",
-      "mob/sulfur_cube/ball/hit3",
-      "mob/sulfur_cube/ball/hit4"
-    ],
-    "subtitle": "subtitles.entity.sulfur_cube.hit"
-  },
-  "entity.sulfur_cube.hurt": {
-    "sounds": [
-      "mob/sulfur_cube/hit1",
-      "mob/sulfur_cube/hit2",
-      "mob/sulfur_cube/hit3",
-      "mob/sulfur_cube/hit4"
-    ],
-    "subtitle": "subtitles.entity.sulfur_cube.hurt"
-  },
-  "entity.sulfur_cube.jump": {
-    "sounds": [
-      "mob/sulfur_cube/jump1",
-      "mob/sulfur_cube/jump2",
-      "mob/sulfur_cube/jump3",
-      "mob/sulfur_cube/jump4",
-      "mob/sulfur_cube/jump5",
-      "mob/sulfur_cube/jump6",
-      "mob/sulfur_cube/jump7",
-      "mob/sulfur_cube/jump8",
-      "mob/sulfur_cube/jump9",
-      "mob/sulfur_cube/jump10",
-      "mob/sulfur_cube/jump11"
-    ],
-    "subtitle": "subtitles.entity.sulfur_cube.squish"
-  },
-  "entity.sulfur_cube.push": {
-    "sounds": [
-      "mob/sulfur_cube/ball/push1",
-      "mob/sulfur_cube/ball/push2",
-      "mob/sulfur_cube/ball/push3",
-      "mob/sulfur_cube/ball/push4"
-    ],
-    "subtitle": "subtitles.entity.sulfur_cube.push"
-  },
-  "entity.sulfur_cube.squish": {
-    "sounds": [
-      "mob/sulfur_cube/squish1",
-      "mob/sulfur_cube/squish2",
-      "mob/sulfur_cube/squish3",
-      "mob/sulfur_cube/squish4",
-      "mob/sulfur_cube/squish5",
-      "mob/sulfur_cube/squish6",
-      "mob/sulfur_cube/squish7",
-      "mob/sulfur_cube/squish8",
-      "mob/sulfur_cube/squish9",
-      "mob/sulfur_cube/squish10",
-      "mob/sulfur_cube/squish11"
-    ],
-    "subtitle": "subtitles.entity.sulfur_cube.squish"
   },
   "entity.tadpole.death": {
     "sounds": [
@@ -23682,14 +23175,6 @@
     ],
     "subtitle": "subtitles.item.bucket.empty"
   },
-  "item.bucket.empty_sulfur_cube": {
-    "sounds": [
-      "item/bucket/emptysulfurcube1",
-      "item/bucket/emptysulfurcube2",
-      "item/bucket/emptysulfurcube3"
-    ],
-    "subtitle": "subtitles.item.bucket.empty"
-  },
   "item.bucket.empty_tadpole": {
     "sounds": [
       {
@@ -23764,14 +23249,6 @@
       }
     ],
     "subtitle": "subtitles.item.bucket.fill"
-  },
-  "item.bucket.fill_sulfur_cube": {
-    "sounds": [
-      "item/bucket/fillsulfurcube1",
-      "item/bucket/fillsulfurcube2",
-      "item/bucket/fillsulfurcube3"
-    ],
-    "subtitle": "subtitles.item.bucket.fill_sulfur_cube"
   },
   "item.bucket.fill_tadpole": {
     "sounds": [
@@ -24943,12 +24420,6 @@
         "stream": true
       },
       {
-        "name": "music/game/ebb",
-        "stream": true,
-        "volume": 0.4,
-        "weight": 2
-      },
-      {
         "name": "music/game/featherfall",
         "stream": true,
         "volume": 0.4
@@ -24966,12 +24437,6 @@
       {
         "name": "music/game/haggstrom",
         "stream": true
-      },
-      {
-        "name": "music/game/home",
-        "stream": true,
-        "volume": 0.4,
-        "weight": 2
       },
       {
         "name": "music/game/key",
@@ -24997,24 +24462,12 @@
         "stream": true
       },
       {
-        "name": "music/game/memories",
-        "stream": true,
-        "volume": 0.4,
-        "weight": 2
-      },
-      {
         "name": "music/game/mice_on_venus",
         "stream": true
       },
       {
         "name": "music/game/minecraft",
         "stream": true
-      },
-      {
-        "name": "music/game/nightly",
-        "stream": true,
-        "volume": 0.4,
-        "weight": 2
       },
       {
         "name": "music/game/one_more_day",
@@ -25034,12 +24487,6 @@
         "name": "music/game/puzzlebox",
         "stream": true,
         "volume": 0.4
-      },
-      {
-        "name": "music/game/shores",
-        "stream": true,
-        "volume": 0.4,
-        "weight": 2
       },
       {
         "name": "music/game/subwoofer_lullaby",
@@ -25068,34 +24515,29 @@
   "music.menu": {
     "sounds": [
       {
-        "name": "music/game/ebb",
+        "name": "music/game/below_and_above",
         "stream": true,
-        "volume": 0.4,
-        "weight": 2
+        "volume": 0.4
       },
       {
-        "name": "music/game/home",
+        "name": "music/game/broken_clocks",
         "stream": true,
-        "volume": 0.4,
-        "weight": 2
+        "volume": 0.4
       },
       {
-        "name": "music/game/memories",
+        "name": "music/game/fireflies",
         "stream": true,
-        "volume": 0.4,
-        "weight": 2
+        "volume": 0.4
       },
       {
-        "name": "music/game/nightly",
+        "name": "music/game/lilypad",
         "stream": true,
-        "volume": 0.4,
-        "weight": 2
+        "volume": 0.4
       },
       {
-        "name": "music/game/shores",
+        "name": "music/game/os_piano",
         "stream": true,
-        "volume": 0.4,
-        "weight": 2
+        "volume": 0.4
       },
       {
         "name": "music/menu/beginning_2",
@@ -25227,7 +24669,8 @@
       {
         "name": "music/game/crescent_dunes",
         "stream": true,
-        "volume": 0.4
+        "volume": 0.4,
+        "weight": 2
       },
       {
         "name": "music/game/danny",
@@ -25260,12 +24703,6 @@
         "stream": true
       },
       {
-        "name": "music/game/memories",
-        "stream": true,
-        "volume": 0.4,
-        "weight": 2
-      },
-      {
         "name": "music/game/mice_on_venus",
         "stream": true
       },
@@ -25293,7 +24730,8 @@
       {
         "name": "music/game/bromeliad",
         "stream": true,
-        "volume": 0.4
+        "volume": 0.4,
+        "weight": 2
       },
       {
         "name": "music/game/danny",
@@ -25306,12 +24744,6 @@
       {
         "name": "music/game/haggstrom",
         "stream": true
-      },
-      {
-        "name": "music/game/home",
-        "stream": true,
-        "volume": 0.4,
-        "weight": 2
       },
       {
         "name": "music/game/key",
@@ -25349,7 +24781,8 @@
       {
         "name": "music/game/below_and_above",
         "stream": true,
-        "volume": 0.4
+        "volume": 0.4,
+        "weight": 2
       },
       {
         "name": "music/game/bromeliad",
@@ -25371,31 +24804,13 @@
         "volume": 0.4
       },
       {
-        "name": "music/game/home",
-        "stream": true,
-        "volume": 0.4,
-        "weight": 2
-      },
-      {
         "name": "music/game/left_to_bloom",
         "stream": true,
         "volume": 0.4
       },
       {
-        "name": "music/game/memories",
-        "stream": true,
-        "volume": 0.4,
-        "weight": 2
-      },
-      {
         "name": "music/game/minecraft",
         "stream": true
-      },
-      {
-        "name": "music/game/nightly",
-        "stream": true,
-        "volume": 0.4,
-        "weight": 2
       },
       {
         "name": "music/game/sweden",
@@ -25430,7 +24845,8 @@
       {
         "name": "music/game/fireflies",
         "stream": true,
-        "volume": 0.4
+        "volume": 0.4,
+        "weight": 2
       },
       {
         "name": "music/game/haggstrom",
@@ -25443,12 +24859,6 @@
       {
         "name": "music/game/living_mice",
         "stream": true
-      },
-      {
-        "name": "music/game/memories",
-        "stream": true,
-        "volume": 0.4,
-        "weight": 2
       },
       {
         "name": "music/game/one_more_day",
@@ -25481,20 +24891,16 @@
         "volume": 0.4
       },
       {
-        "name": "music/game/ebb",
+        "name": "music/game/eld_unknown",
         "stream": true,
         "volume": 0.4,
         "weight": 2
       },
       {
-        "name": "music/game/eld_unknown",
-        "stream": true,
-        "volume": 0.4
-      },
-      {
         "name": "music/game/endless",
         "stream": true,
-        "volume": 0.4
+        "volume": 0.4,
+        "weight": 2
       },
       {
         "name": "music/game/infinite_amethyst",
@@ -25506,23 +24912,13 @@
         "stream": true
       },
       {
-        "name": "music/game/nightly",
-        "stream": true,
-        "weight": 2
-      },
-      {
         "name": "music/game/oxygene",
         "stream": true
       },
       {
         "name": "music/game/pokopoko",
         "stream": true,
-        "volume": 0.8
-      },
-      {
-        "name": "music/game/shores",
-        "stream": true,
-        "volume": 0.4,
+        "volume": 0.8,
         "weight": 2
       },
       {
@@ -25532,7 +24928,8 @@
       {
         "name": "music/game/wending",
         "stream": true,
-        "volume": 0.4
+        "volume": 0.4,
+        "weight": 2
       }
     ]
   },
@@ -25555,7 +24952,8 @@
       {
         "name": "music/game/featherfall",
         "stream": true,
-        "volume": 0.4
+        "volume": 0.4,
+        "weight": 2
       },
       {
         "name": "music/game/haggstrom",
@@ -25575,20 +24973,8 @@
         "stream": true
       },
       {
-        "name": "music/game/memories",
-        "stream": true,
-        "volume": 0.4,
-        "weight": 2
-      },
-      {
         "name": "music/game/oxygene",
         "stream": true
-      },
-      {
-        "name": "music/game/shores",
-        "stream": true,
-        "volume": 0.4,
-        "weight": 2
       },
       {
         "name": "music/game/subwoofer_lullaby",
@@ -25601,7 +24987,8 @@
       {
         "name": "music/game/broken_clocks",
         "stream": true,
-        "volume": 0.4
+        "volume": 0.4,
+        "weight": 2
       },
       {
         "name": "music/game/bromeliad",
@@ -25648,12 +25035,6 @@
         "stream": true
       },
       {
-        "name": "music/game/memories",
-        "stream": true,
-        "volume": 0.4,
-        "weight": 2
-      },
-      {
         "name": "music/game/mice_on_venus",
         "stream": true
       },
@@ -25669,12 +25050,6 @@
       {
         "name": "music/game/oxygene",
         "stream": true
-      },
-      {
-        "name": "music/game/shores",
-        "stream": true,
-        "volume": 0.4,
-        "weight": 2
       },
       {
         "name": "music/game/subwoofer_lullaby",
@@ -25716,20 +25091,8 @@
         "stream": true
       },
       {
-        "name": "music/game/ebb",
-        "stream": true,
-        "volume": 0.4,
-        "weight": 2
-      },
-      {
         "name": "music/game/haggstrom",
         "stream": true
-      },
-      {
-        "name": "music/game/home",
-        "stream": true,
-        "volume": 0.4,
-        "weight": 2
       },
       {
         "name": "music/game/lilypad",
@@ -25745,15 +25108,10 @@
         "stream": true
       },
       {
-        "name": "music/game/nightly",
+        "name": "music/game/stand_tall",
         "stream": true,
         "volume": 0.4,
         "weight": 2
-      },
-      {
-        "name": "music/game/stand_tall",
-        "stream": true,
-        "volume": 0.4
       },
       {
         "name": "music/game/subwoofer_lullaby",
@@ -25798,7 +25156,8 @@
       {
         "name": "music/game/lilypad",
         "stream": true,
-        "volume": 0.4
+        "volume": 0.4,
+        "weight": 2
       },
       {
         "name": "music/game/mice_on_venus",
@@ -25818,12 +25177,6 @@
         "volume": 0.8
       },
       {
-        "name": "music/game/shores",
-        "stream": true,
-        "volume": 0.4,
-        "weight": 2
-      },
-      {
         "name": "music/game/sweden",
         "stream": true
       },
@@ -25839,12 +25192,6 @@
       {
         "name": "music/game/dry_hands",
         "stream": true
-      },
-      {
-        "name": "music/game/ebb",
-        "stream": true,
-        "volume": 0.4,
-        "weight": 2
       },
       {
         "name": "music/game/eld_unknown",
@@ -25872,12 +25219,6 @@
       {
         "name": "music/game/mice_on_venus",
         "stream": true
-      },
-      {
-        "name": "music/game/nightly",
-        "stream": true,
-        "volume": 0.4,
-        "weight": 2
       },
       {
         "name": "music/game/oxygene",
@@ -25913,7 +25254,8 @@
       {
         "name": "music/game/bromeliad",
         "stream": true,
-        "volume": 0.4
+        "volume": 0.4,
+        "weight": 3
       },
       {
         "name": "music/game/danny",
@@ -25928,18 +25270,11 @@
         "stream": true
       },
       {
-        "name": "music/game/home",
-        "stream": true,
-        "volume": 0.4,
-        "weight": 2
-      },
-      {
         "name": "music/game/key",
         "stream": true
       },
       {
         "name": "music/game/left_to_bloom",
-        "stream": true,
         "volume": 0.4
       },
       {
@@ -26011,11 +25346,6 @@
       {
         "name": "music/game/os_piano",
         "stream": true,
-        "volume": 0.4
-      },
-      {
-        "name": "music/game/shores",
-        "stream": true,
         "volume": 0.4,
         "weight": 2
       },
@@ -26051,12 +25381,6 @@
         "stream": true
       },
       {
-        "name": "music/game/home",
-        "stream": true,
-        "volume": 0.4,
-        "weight": 2
-      },
-      {
         "name": "music/game/left_to_bloom",
         "stream": true,
         "volume": 0.4
@@ -26081,69 +25405,77 @@
     "sounds": [
       {
         "name": "music/game/clark",
-        "stream": true
+        "stream": true,
+        "weight": 3
       },
       {
         "name": "music/game/comforting_memories",
         "stream": true,
-        "volume": 0.4
+        "volume": 0.4,
+        "weight": 3
       },
       {
         "name": "music/game/danny",
-        "stream": true
+        "stream": true,
+        "weight": 3
       },
       {
         "name": "music/game/dry_hands",
-        "stream": true
+        "stream": true,
+        "weight": 3
       },
       {
         "name": "music/game/floating_dream",
         "stream": true,
-        "volume": 0.4
+        "volume": 0.4,
+        "weight": 3
       },
       {
         "name": "music/game/haggstrom",
-        "stream": true
+        "stream": true,
+        "weight": 3
       },
       {
         "name": "music/game/key",
-        "stream": true
+        "stream": true,
+        "weight": 3
       },
       {
         "name": "music/game/left_to_bloom",
         "stream": true,
-        "volume": 0.4
+        "volume": 0.4,
+        "weight": 3
       },
       {
         "name": "music/game/living_mice",
-        "stream": true
+        "stream": true,
+        "weight": 3
       },
       {
         "name": "music/game/mice_on_venus",
-        "stream": true
+        "stream": true,
+        "weight": 3
       },
       {
         "name": "music/game/minecraft",
-        "stream": true
+        "stream": true,
+        "weight": 3
       },
       {
         "name": "music/game/one_more_day",
         "stream": true,
-        "volume": 0.4
+        "volume": 0.4,
+        "weight": 3
       },
       {
         "name": "music/game/oxygene",
-        "stream": true
-      },
-      {
-        "name": "music/game/shores",
         "stream": true,
-        "volume": 0.4,
-        "weight": 2
+        "weight": 3
       },
       {
         "name": "music/game/subwoofer_lullaby",
-        "stream": true
+        "stream": true,
+        "weight": 3
       },
       {
         "name": "music/game/swamp/aerie",
@@ -26162,11 +25494,13 @@
       },
       {
         "name": "music/game/sweden",
-        "stream": true
+        "stream": true,
+        "weight": 3
       },
       {
         "name": "music/game/wet_hands",
-        "stream": true
+        "stream": true,
+        "weight": 3
       }
     ]
   },
@@ -26184,12 +25518,6 @@
       {
         "name": "music/game/living_mice",
         "stream": true
-      },
-      {
-        "name": "music/game/nightly",
-        "stream": true,
-        "volume": 0.4,
-        "weight": 2
       },
       {
         "name": "music/game/one_more_day",
@@ -26217,7 +25545,8 @@
       {
         "name": "music/game/bromeliad",
         "stream": true,
-        "volume": 0.4
+        "volume": 0.4,
+        "weight": 2
       },
       {
         "name": "music/game/danny",
@@ -26230,12 +25559,6 @@
       {
         "name": "music/game/haggstrom",
         "stream": true
-      },
-      {
-        "name": "music/game/home",
-        "stream": true,
-        "volume": 0.4,
-        "weight": 2
       },
       {
         "name": "music/game/key",
@@ -26280,8 +25603,8 @@
       },
       {
         "name": "music/game/eld_unknown",
-        "stream": true,
-        "volume": 0.4
+        "volume": 0.4,
+        "weight": 2
       },
       {
         "name": "music/game/endless",
@@ -26301,15 +25624,10 @@
         "stream": true
       },
       {
-        "name": "music/game/nightly",
+        "name": "music/game/stand_tall",
         "stream": true,
         "volume": 0.4,
         "weight": 2
-      },
-      {
-        "name": "music/game/stand_tall",
-        "stream": true,
-        "volume": 0.4
       },
       {
         "name": "music/game/subwoofer_lullaby",
@@ -26326,84 +25644,8 @@
       }
     ]
   },
-  "music.overworld.sulfur_caves": {
-    "sounds": [
-      {
-        "name": "music/game/an_ordinary_day",
-        "stream": true
-      },
-      {
-        "name": "music/game/danny",
-        "stream": true
-      },
-      {
-        "name": "music/game/deeper",
-        "stream": true,
-        "volume": 0.4
-      },
-      {
-        "name": "music/game/ebb",
-        "stream": true,
-        "volume": 0.4,
-        "weight": 2
-      },
-      {
-        "name": "music/game/eld_unknown",
-        "stream": true,
-        "volume": 0.4
-      },
-      {
-        "name": "music/game/endless",
-        "stream": true,
-        "volume": 0.4
-      },
-      {
-        "name": "music/game/infinite_amethyst",
-        "stream": true,
-        "volume": 0.4
-      },
-      {
-        "name": "music/game/key",
-        "stream": true
-      },
-      {
-        "name": "music/game/nightly",
-        "stream": true,
-        "weight": 2
-      },
-      {
-        "name": "music/game/oxygene",
-        "stream": true
-      },
-      {
-        "name": "music/game/pokopoko",
-        "stream": true,
-        "volume": 0.8
-      },
-      {
-        "name": "music/game/shores",
-        "stream": true,
-        "volume": 0.4,
-        "weight": 2
-      },
-      {
-        "name": "music/game/subwoofer_lullaby",
-        "stream": true
-      },
-      {
-        "name": "music/game/wending",
-        "stream": true,
-        "volume": 0.4
-      }
-    ]
-  },
   "music.overworld.swamp": {
     "sounds": [
-      {
-        "name": "music/game/ebb",
-        "stream": true,
-        "volume": 0.4
-      },
       {
         "name": "music/game/swamp/aerie",
         "stream": true,
@@ -26468,14 +25710,6 @@
     "sounds": [
       {
         "name": "records/blocks",
-        "stream": true
-      }
-    ]
-  },
-  "music_disc.bounce": {
-    "sounds": [
-      {
-        "name": "records/bounce",
         "stream": true
       }
     ]
