@@ -8,9 +8,9 @@ env:
   ARTIFACT_PATH: './downloaded_assets'
 
 on:
-  # schedule:
-    # - cron: '30 * * * *' # Runs at 30 minutes past the hour, every day
-    #   timezone: 'Europe/Berlin'
+  schedule:
+    - cron: '30 * * * *' # Runs at 30 minutes past the hour, every day
+      timezone: 'Europe/Berlin'
   
   workflow_call:
     inputs:
