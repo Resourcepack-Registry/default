@@ -66,7 +66,7 @@ jobs:
       
 
   generate:
-    name: 'Generate'
+    name: "Generate${{ needs.version.outputs.tag_exists == 'false' && format(' \"{0}\"', needs.version.outputs.selected_version) || '' }}"
     runs-on: ubuntu-24.04
     needs: ['version']
     if: needs.version.outputs.tag_exists == 'false'
