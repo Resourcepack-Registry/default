@@ -2,6 +2,6 @@
   "pack": {
     "description": "Enhances the UI contrast of Minecraft",
     "min_format": 100,
-    "max_format": 100
+    "max_format": 101
   }
 }
